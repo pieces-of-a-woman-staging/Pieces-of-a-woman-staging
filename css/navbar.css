@@ -543,8 +543,7 @@ a {
       rgba(255, 247, 242, 0.73) 0%,
       rgba(253, 232, 232, 0.43) 48%,
       rgba(194, 101, 119, 0.12) 100%
-    ),
-    url("../workbook-background.jpg");
+    );
   background-position: center;
   background-size: cover;
 }
@@ -1064,28 +1063,16 @@ a {
   padding: 110px 32px 130px;
   background-color: var(--pink-soft);
   background-image:
-    radial-gradient(
-      ellipse 520px 140px at 12% 22%,
-      transparent 55%,
-      rgba(255,255,255,0.32) 57%,
-      rgba(183,95,115,0.12) 59%,
-      transparent 62%
-    ),
-    radial-gradient(
-      ellipse 760px 180px at 88% 78%,
-      transparent 55%,
-      rgba(255,255,255,0.28) 57%,
-      rgba(124,45,69,0.10) 59%,
-      transparent 62%
-    ),
     linear-gradient(
       115deg,
-      rgba(255,249,244,0.92),
-      rgba(239,199,215,0.78),
-      rgba(217,122,174,0.32)
-    );
+      rgba(255,249,244,0.30),
+      rgba(249,228,225,0.24),
+      rgba(122,139,116,0.08)
+    ),
+    url("../images/silk-bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #shop.shop-section::before {
@@ -1113,19 +1100,7 @@ a {
 
 #shop .shop-wrapper::before,
 #shop .shop-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  background-image: url("../florals.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.42;
-  filter:
-    drop-shadow(
-      0 6px 8px rgba(47,36,48,0.14)
-    );
-  pointer-events: none;
+  content: none;
 }
 
 #shop .shop-wrapper::before {
@@ -1357,12 +1332,16 @@ ul.product-card__details {
 
 .poaw-author {
   padding: 80px 20px 90px;
-  background:
+  background-color: #fff9f4;
+  background-image:
     linear-gradient(
-      180deg,
-      #fff9f4 0%,
-      #fdf0f3 100%
-    );
+      rgba(255,249,244,0.80),
+      rgba(253,240,243,0.72)
+    ),
+    url("../images/floral-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #4f1729;
 }
 
@@ -1548,7 +1527,12 @@ ul.product-card__details {
   margin-top: 80px;
   padding: 60px 20px 40px;
   background-image:
-    url("images/Pinkmarble.png");
+    linear-gradient(
+      135deg,
+      #fff9f5 0%,
+      #f9e4e1 45%,
+      #f8d7d0 100%
+    );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1713,8 +1697,7 @@ ul.product-card__details {
         160deg,
         rgba(255,250,247,0.99),
         rgba(247,223,225,0.98)
-      ),
-      url("../workbook-background.jpg");
+      );
     background-size: cover;
     border-right:
       1px solid rgba(198,154,69,0.48);
