@@ -191,3 +191,154 @@ button,a{-webkit-tap-highlight-color:transparent}
   .poaw-author__quote{font-size:25px;padding:20px 14px}
   .site-footer{min-height:250px}.footer-overlay{padding:48px 18px}.footer-nav{gap:14px}
 }
+
+/* ===== POAW USER-APPROVED VISUAL CORRECTIONS 2026-09-24 ===== */
+
+/* Remove the flat green SVG foliage. The approved floral/water direction carries the decoration. */
+.olive-branch,
+.poaw-author__olive,
+.navbar-floral {
+  display: none !important;
+}
+
+/* Make the water-ripple design visible instead of hiding it under opaque image overlays. */
+.hero {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 72% 60%, transparent 0 12%, rgba(255,255,255,.62) 12.5% 13.1%, transparent 13.6% 18%, rgba(201,168,106,.26) 18.5% 19.1%, transparent 19.6% 25%, rgba(217,122,174,.24) 25.5% 26.1%, transparent 26.6%),
+    radial-gradient(ellipse at 72% 60%, rgba(255,255,255,.10), rgba(249,228,225,.34) 45%, rgba(248,215,208,.62) 100%),
+    linear-gradient(135deg,#fff9f5 0%,#f9e4e1 38%,#f8d7d0 72%,#efc7d7 100%) !important;
+}
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 8% 10%,rgba(255,255,255,.75),transparent 23%),
+    radial-gradient(circle at 92% 15%,rgba(255,255,255,.45),transparent 24%);
+}
+.hero-ripple {
+  display:block !important;
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+  opacity:.32;
+  border:1.5px solid rgba(201,168,106,.62);
+  animation:poaw-ripple 4.5s ease-out infinite;
+}
+.hero-ripple--one{width:420px;height:150px;right:-70px;bottom:90px}
+.hero-ripple--two{width:330px;height:115px;right:15px;bottom:108px;animation-delay:.8s}
+.hero-ripple--three{width:235px;height:82px;right:62px;bottom:126px;animation-delay:1.6s}
+@keyframes poaw-ripple{
+  0%{transform:scale(.82);opacity:.42}
+  70%,100%{transform:scale(1.2);opacity:0}
+}
+
+/* Keep the shop and author areas blush/cream so the ripple design can breathe. */
+.shop-section {
+  background:
+    radial-gradient(ellipse at 50% 2%, transparent 0 16%, rgba(201,168,106,.18) 16.4% 16.8%, transparent 17.2% 22%, rgba(217,122,174,.14) 22.4% 22.8%, transparent 23.2%),
+    linear-gradient(180deg,rgba(249,228,225,.82),rgba(255,249,245,.94)) !important;
+  background-attachment:scroll !important;
+}
+.shop-ripple{display:block !important;position:absolute;border-radius:50%;border:1px solid rgba(201,168,106,.36);pointer-events:none}
+.shop-ripple--one{width:520px;height:180px;right:-120px;top:120px}
+.shop-ripple--two{width:440px;height:150px;left:-120px;bottom:140px}
+.shop-florals{display:none !important}
+
+.poaw-author {
+  background:
+    radial-gradient(ellipse at 85% 10%,rgba(249,228,225,.72),transparent 34%),
+    radial-gradient(ellipse at 10% 85%,rgba(248,215,208,.54),transparent 35%),
+    #fff9f5 !important;
+}
+.community-section{
+  position:relative;
+  overflow:hidden;
+  padding:76px 24px;
+  text-align:center;
+  background:
+    radial-gradient(ellipse at 50% 70%,transparent 0 18%,rgba(201,168,106,.22) 18.4% 18.8%,transparent 19.2% 25%,rgba(217,122,174,.17) 25.4% 25.8%,transparent 26.2%),
+    linear-gradient(180deg,#f9e4e1,#fff9f5);
+}
+.community-section__inner{width:min(760px,100%);margin:auto;position:relative;z-index:1}
+.community-heading{margin:0;font-family:var(--heading);font-size:clamp(42px,6vw,64px);line-height:1;color:var(--plum-dark);font-weight:600}
+.community-subheading{max-width:560px;margin:0 auto 24px;font-size:13px;line-height:1.75;color:#563b4d}
+.community-button{margin:auto}
+
+/* Product artwork must be fully visible. Never crop the user's actual product photography. */
+.product-card__image {
+  aspect-ratio:auto !important;
+  min-height:0 !important;
+  height:auto !important;
+  background:#fff9f5 !important;
+  overflow:hidden;
+}
+.product-card--featured .product-card__image{
+  height:auto !important;
+  min-height:0 !important;
+}
+.product-card__image img {
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  transform:none !important;
+}
+.product-card:hover .product-card__image img{transform:none !important}
+
+/* Hero product photos also stay complete instead of being cut off. */
+.hero-image-frame{
+  height:auto !important;
+  aspect-ratio:1 / 1.24;
+  background:rgba(255,249,245,.72) !important;
+}
+.hero-image-inner img{
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Author portrait: use the full selected landscape portrait, not a forced square crop. */
+.poaw-author__photo{
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+.poaw-author__photo-frame{background:#fff9f5}
+
+/* Footer: clean blush-water finish; no pixelated background image. */
+.site-footer{
+  background:
+    radial-gradient(ellipse at 50% 40%,transparent 0 17%,rgba(255,255,255,.52) 17.4% 18%,transparent 18.4% 24%,rgba(201,168,106,.28) 24.4% 25%,transparent 25.4%),
+    linear-gradient(180deg,#f8d7d0,#efc7d7) !important;
+}
+.footer-overlay{background:rgba(255,249,245,.22) !important}
+
+@media(max-width:900px){
+  .hero-ripple--one{width:360px;height:125px;right:-105px;bottom:50px}
+  .hero-ripple--two{width:280px;height:98px;right:-25px;bottom:67px}
+  .hero-ripple--three{width:205px;height:72px;right:20px;bottom:84px}
+}
+@media(max-width:640px){
+  .hero{
+    background:
+      radial-gradient(ellipse at 50% 76%,transparent 0 14%,rgba(255,255,255,.70) 14.5% 15.2%,transparent 15.7% 21%,rgba(201,168,106,.28) 21.5% 22.1%,transparent 22.6% 29%,rgba(217,122,174,.22) 29.5% 30.1%,transparent 30.6%),
+      linear-gradient(180deg,#fff9f5 0%,#f9e4e1 46%,#f8d7d0 100%) !important;
+  }
+  .hero-artwork{min-height:360px !important;display:block !important}
+  .hero-image-frame{width:46% !important;max-width:205px !important}
+  .hero-image-frame--part-one{left:5% !important;top:26px !important}
+  .hero-image-frame--part-two{right:5% !important;bottom:16px !important}
+  .hero-ripple--one{width:310px;height:108px;right:-95px;bottom:35px}
+  .hero-ripple--two{width:245px;height:86px;right:-30px;bottom:52px}
+  .hero-ripple--three{width:180px;height:64px;right:10px;bottom:69px}
+  .product-card__image{aspect-ratio:auto !important}
+  .product-card__content{padding:24px 22px !important}
+  .community-section{padding:56px 20px}
+}
