@@ -683,3 +683,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   .shop-discover-grid>a{padding:25px}
   .inner-page-intro{padding:46px 18px 22px}
 }
+
+/* Do not publish an unverified founder portrait. Preserve founder biography. */
+.poaw-author__portrait{display:none!important}
+.poaw-author__story{max-width:900px!important;margin:0 auto!important}
