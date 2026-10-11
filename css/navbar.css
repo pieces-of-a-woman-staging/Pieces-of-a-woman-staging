@@ -985,3 +985,34 @@ button,a{-webkit-tap-highlight-color:transparent}
     background-position:center 28%!important;
   }
 }
+
+/* ===== BACKGROUND ONLY: SOFT BLUSH / IVORY COORDINATION · 2026-10-11 =====
+   Based on the supplied softer floral founder-page reference.
+   Deliberately changes ONLY the background paint on the homepage hero
+   and collection heading. Does not alter text, products, photos, layout,
+   links, navigation, page structure, or any other pages. */
+.page-reference-design .hero{
+  background-color:#f9e4e1!important;
+  background-image:none!important;
+}
+.page-reference-design .hero::before{
+  background-color:#f9e4e1!important;
+  background-image:
+    radial-gradient(ellipse 64% 50% at 5% 14%,rgba(229,160,170,.32) 0%,rgba(229,160,170,0) 100%),
+    radial-gradient(ellipse 50% 68% at 95% 72%,rgba(210,149,152,.22) 0%,rgba(210,149,152,0) 100%),
+    radial-gradient(ellipse 65% 55% at 54% 88%,rgba(255,251,247,.62) 0%,rgba(255,251,247,0) 100%),
+    linear-gradient(145deg,#f5d4d3 0%,#f9e5e1 30%,#fff2ea 52%,#f0d0cd 75%,#fae8e2 100%)!important;
+  filter:none!important;
+}
+.page-reference-design .shop-header{
+  background-color:#f9e4e1!important;
+  background-image:none!important;
+}
+.page-reference-design .shop-header::before{
+  background-color:#f9e4e1!important;
+  background-image:
+    radial-gradient(ellipse 48% 85% at 0% 18%,rgba(229,164,175,.32),rgba(229,164,175,0) 100%),
+    radial-gradient(ellipse 45% 78% at 100% 85%,rgba(206,160,150,.23),rgba(206,160,150,0) 100%),
+    linear-gradient(115deg,#f6d9d8 0%,#fff3ec 48%,#f5d6d3 100%)!important;
+  filter:none!important;
+}
