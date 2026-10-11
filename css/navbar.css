@@ -687,3 +687,11 @@ button,a{-webkit-tap-highlight-color:transparent}
 /* Do not publish an unverified founder portrait. Preserve founder biography. */
 .poaw-author__portrait{display:none!important}
 .poaw-author__story{max-width:900px!important;margin:0 auto!important}
+
+/* Verified founder photograph, supplied by the author — October 2026 */
+.poaw-author__portrait{display:block!important;width:100%!important;max-width:100%!important;margin:0!important;align-self:start}
+.poaw-author__layout{display:grid!important;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)!important;gap:clamp(24px,4vw,58px)!important;align-items:start!important}
+.poaw-author__photo-frame{padding:8px!important;background:#fff9f5!important;border:1px solid #c9a86a!important;box-shadow:0 16px 40px rgba(92,36,65,.12)!important}
+.poaw-author__photo{display:block!important;width:100%!important;height:auto!important;aspect-ratio:1179/915!important;object-fit:cover!important;object-position:center!important}
+.poaw-author__story{max-width:none!important;width:100%!important}
+@media(max-width:760px){.poaw-author__layout{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}.poaw-author__portrait{max-width:560px!important;margin:0 auto!important}}
