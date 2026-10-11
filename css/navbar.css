@@ -695,3 +695,233 @@ button,a{-webkit-tap-highlight-color:transparent}
 .poaw-author__photo{display:block!important;width:100%!important;height:auto!important;aspect-ratio:1179/915!important;object-fit:cover!important;object-position:center!important}
 .poaw-author__story{max-width:none!important;width:100%!important}
 @media(max-width:760px){.poaw-author__layout{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}.poaw-author__portrait{max-width:560px!important;margin:0 auto!important}}
+
+/* ==========================================================
+   REFERENCE-FAITHFUL HOMEPAGE · OCT 2026
+   Scoped to homepage; all original sections and links retained.
+   Visual direction: user-provided pink-water / olive branch example.
+   ========================================================== */
+.page-reference-design .site-header{
+  position:absolute!important;inset:0 0 auto!important;z-index:100!important;
+  background:transparent!important;
+}
+.page-reference-design .announcement-bar{display:none!important}
+.page-reference-design .navbar{
+  min-height:90px!important;background:transparent!important;border:0!important;
+  box-shadow:none!important;backdrop-filter:none!important;
+}
+.page-reference-design .navbar-container{
+  width:min(1170px,calc(100% - 42px))!important;
+  min-height:90px!important;gap:22px!important;
+  align-items:flex-start!important;padding-top:17px!important;
+}
+.page-reference-design .navbar-floral{display:none!important}
+.page-reference-design .brand{gap:8px!important;align-items:center!important}
+.page-reference-design .brand-emblem{width:31px!important;height:31px!important}
+.page-reference-design .brand-name{
+  font-family:var(--heading)!important;font-size:clamp(22px,2.6vw,31px)!important;
+  font-weight:600!important;letter-spacing:.01em!important;white-space:nowrap!important;
+}
+.page-reference-design .brand-subtitle{font-size:9px!important;letter-spacing:.32em!important;margin-top:4px!important}
+.page-reference-design .navigation-panel{gap:13px!important}
+.page-reference-design .navigation-links{gap:clamp(9px,1.5vw,20px)!important}
+.page-reference-design .navigation-link{
+  padding:11px 0!important;font-size:9px!important;letter-spacing:.09em!important;
+  color:#4d1539!important;border-bottom:0!important;
+}
+.page-reference-design .navbar-button{display:none!important}
+.page-reference-design .hero{
+  min-height:435px!important;height:auto!important;overflow:hidden!important;
+  background-image:linear-gradient(90deg,rgba(255,245,245,.18),rgba(255,236,240,.03)),url("../images/pink-water-hero-reference.jpg")!important;
+  background-color:#f9d6de!important;background-size:cover!important;
+  background-position:center 58%!important;background-repeat:no-repeat!important;
+}
+.page-reference-design .hero::before{display:none!important}
+.page-reference-design .hero::after{
+  content:"A BEAUTIFUL LIFE\A COVERED BY GOD."!important;white-space:pre!important;
+  position:absolute!important;inset:auto 3.3% 28px auto!important;z-index:2!important;
+  background:none!important;color:#4d1539!important;text-align:center!important;
+  font-family:var(--body)!important;font-size:10px!important;letter-spacing:.18em!important;
+  line-height:1.6!important;font-weight:600!important;pointer-events:none!important;
+}
+.page-reference-design .hero-container{
+  display:block!important;width:min(1170px,calc(100% - 42px))!important;
+  min-height:435px!important;padding:126px 0 45px!important;
+}
+.page-reference-design .hero-content{
+  position:relative!important;width:min(680px,66%)!important;max-width:none!important;
+  z-index:5!important;text-align:center!important;
+}
+.page-reference-design .hero .section-eyebrow{
+  display:none!important;
+}
+.page-reference-design .hero-heading{
+  margin:0!important;line-height:.98!important;font-family:var(--heading)!important;
+  font-size:inherit!important;letter-spacing:0!important;
+}
+.page-reference-design .hero-heading__title{
+  display:block!important;font-size:clamp(32px,4.35vw,60px)!important;
+  letter-spacing:-.035em!important;line-height:.96!important;
+  font-weight:600!important;white-space:nowrap!important;
+}
+.page-reference-design .hero-heading__part{
+  display:inline!important;font-size:clamp(28px,3.35vw,45px)!important;
+  font-style:italic!important;line-height:1.08!important;margin:0 10px 0 0!important;
+  font-weight:500!important;
+}
+.page-reference-design .hero-heading__availability{
+  display:inline!important;font-size:clamp(24px,3.25vw,43px)!important;
+  line-height:1.08!important;letter-spacing:0!important;
+}
+.page-reference-design .hero .gold-divider,
+.page-reference-design .hero-description,
+.page-reference-design .hero-scripture{display:none!important}
+.page-reference-design .hero-tagline{
+  font-family:var(--heading)!important;font-size:clamp(17px,2.2vw,25px)!important;
+  font-weight:500!important;line-height:1.2!important;
+  margin:13px 0 17px!important;color:#4d1539!important;
+}
+.page-reference-design .hero .primary-button{
+  display:inline-flex!important;background:#e64f7b!important;border:0!important;
+  color:#fff!important;border-radius:8px!important;padding:13px 21px!important;
+  font-size:11px!important;letter-spacing:.055em!important;box-shadow:0 7px 18px rgba(126,37,77,.18)!important;
+}
+.page-reference-design .hero .primary-button:hover{background:#d93e70!important}
+.page-reference-design .hero-artwork,
+.page-reference-design .hero-ripple{display:none!important}
+.page-reference-design .shop-section{
+  padding:0 0 68px!important;background:#fbe8e6!important;background-image:none!important;
+}
+.page-reference-design .shop-wrapper{
+  width:min(1180px,calc(100% - 20px))!important;
+}
+.page-reference-design .shop-header{
+  position:relative!important;max-width:none!important;
+  margin:0 0 12px!important;padding:20px 150px 24px!important;
+  min-height:144px!important;text-align:center!important;
+  border:1px solid rgba(201,168,106,.75)!important;
+  background:linear-gradient(100deg,rgba(255,228,232,.72),rgba(255,242,242,.75)),
+             url("../images/pink-water-hero-reference.jpg") center 23%/cover no-repeat!important;
+  overflow:hidden!important;
+}
+.page-reference-design .shop-header::after{
+  content:"SCRIPTURE\A STUDY\A PURPOSE\A TRANSFORMATION";
+  white-space:pre;position:absolute;right:20px;top:31px;
+  font:600 10px/1.55 var(--body);letter-spacing:.15em;color:#4d1539;
+  text-align:center;
+}
+.page-reference-design .shop-header .section-eyebrow{
+  display:block!important;margin:0 0 6px!important;
+  font-size:11px!important;letter-spacing:.28em!important;color:#6e1f52!important;
+}
+.page-reference-design .shop-header .section-eyebrow span{display:none!important}
+.page-reference-design .shop-heading{
+  margin:0!important;font-family:var(--heading)!important;
+  font-size:clamp(36px,4.7vw,59px)!important;line-height:1!important;
+  color:#4d1539!important;font-weight:600!important;
+}
+.page-reference-design .shop-header .gold-divider{margin:11px auto 0!important}
+.page-reference-design .shop-introduction{display:none!important}
+.page-reference-design .product-grid{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.page-reference-design .product-card--featured{
+  grid-column:1/-1!important;
+}
+.page-reference-design .product-card,
+.page-reference-design .product-card--featured{
+  border:1px solid rgba(201,168,106,.75)!important;
+  background:#fff5f3!important;box-shadow:0 3px 8px rgba(84,28,59,.08)!important;
+}
+.page-reference-design .product-card__frame,
+.page-reference-design .product-card--featured .product-card__frame{
+  display:grid!important;grid-template-columns:1fr 1fr!important;
+  min-height:0!important;height:100%!important;overflow:hidden!important;
+  background:linear-gradient(125deg,#fbe4e6,#fff6f1)!important;
+}
+.page-reference-design .product-card--featured .product-card__frame{
+  grid-template-columns:1.4fr .6fr!important;
+}
+.page-reference-design .product-card__image,
+.page-reference-design .product-card--featured .product-card__image{
+  width:100%!important;height:100%!important;min-height:230px!important;
+  aspect-ratio:auto!important;padding:0!important;overflow:hidden!important;
+  background:#f8d7d0!important;
+}
+.page-reference-design .product-card__image img,
+.page-reference-design .product-card--featured .product-card__image img{
+  width:100%!important;height:100%!important;max-height:none!important;
+  object-fit:cover!important;
+}
+.page-reference-design .product-card__content,
+.page-reference-design .product-card--featured .product-card__content{
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  justify-content:center!important;text-align:left!important;min-width:0!important;
+  padding:23px!important;border:0!important;
+}
+.page-reference-design .product-card__title{font-size:clamp(25px,2.8vw,37px)!important;line-height:.96!important}
+.page-reference-design .product-card__price{font-size:clamp(29px,3.2vw,40px)!important}
+.page-reference-design .product-card__details{font-size:11px!important;line-height:1.5!important}
+.page-reference-design .product-card__button{
+  width:auto!important;min-width:0!important;max-width:100%!important;
+  padding:11px 18px!important;font-size:10px!important;
+  background:#e64f7b!important;border-radius:7px!important;
+  margin-top:14px!important;
+}
+@media(max-width:950px){
+  .page-reference-design .navbar-container{align-items:center!important;padding-top:0!important}
+  .page-reference-design .navigation-panel{background:#fff9f5!important}
+  .page-reference-design .menu-toggle{display:block!important}
+  .page-reference-design .hero-content{width:min(630px,76%)!important}
+  .page-reference-design .shop-header{padding-left:100px!important;padding-right:130px!important}
+}
+@media(max-width:640px){
+  .page-reference-design .navbar{min-height:70px!important}
+  .page-reference-design .navbar-container{min-height:70px!important;width:calc(100% - 30px)!important}
+  .page-reference-design .brand-name{font-size:22px!important}
+  .page-reference-design .brand-subtitle{font-size:7px!important}
+  .page-reference-design .hero{
+    min-height:440px!important;background-position:48% 52%!important;
+    background-image:linear-gradient(90deg,rgba(255,242,245,.42),rgba(255,236,240,.18)),url("../images/pink-water-hero-reference.jpg")!important;
+  }
+  .page-reference-design .hero-container{
+    min-height:440px!important;width:calc(100% - 28px)!important;
+    padding:115px 0 45px!important;
+  }
+  .page-reference-design .hero-content{width:100%!important;max-width:100%!important}
+  .page-reference-design .hero-heading__title{
+    font-size:clamp(28px,7.6vw,43px)!important;white-space:normal!important;
+  }
+  .page-reference-design .hero-heading__part{font-size:32px!important}
+  .page-reference-design .hero-heading__availability{font-size:30px!important}
+  .page-reference-design .hero-tagline{font-size:20px!important;margin:14px 0!important}
+  .page-reference-design .hero .primary-button{font-size:10px!important;padding:13px 17px!important}
+  .page-reference-design .hero::after{right:12px!important;bottom:13px!important;font-size:7px!important}
+  .page-reference-design .shop-wrapper{width:calc(100% - 14px)!important}
+  .page-reference-design .shop-header{
+    min-height:128px!important;padding:20px 12px!important;
+    background-position:center 28%!important;
+  }
+  .page-reference-design .shop-header .section-eyebrow{font-size:8px!important;letter-spacing:.19em!important}
+  .page-reference-design .shop-heading{font-size:clamp(30px,9vw,42px)!important}
+  .page-reference-design .shop-header::after{display:none!important}
+  .page-reference-design .product-grid{grid-template-columns:1fr!important;gap:10px!important}
+  .page-reference-design .product-card--featured{grid-column:auto!important}
+  .page-reference-design .product-card__frame,
+  .page-reference-design .product-card--featured .product-card__frame{
+    grid-template-columns:1fr 1fr!important;
+  }
+  .page-reference-design .product-card__image,
+  .page-reference-design .product-card--featured .product-card__image{
+    min-height:175px!important;
+  }
+  .page-reference-design .product-card__content,
+  .page-reference-design .product-card--featured .product-card__content{
+    padding:12px!important;
+  }
+  .page-reference-design .product-card__title{font-size:21px!important}
+  .page-reference-design .product-card__price{font-size:27px!important}
+  .page-reference-design .product-card__details{font-size:9px!important}
+  .page-reference-design .product-card__button{font-size:8px!important;padding:9px 8px!important}
+}
