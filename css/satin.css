@@ -1,0 +1,1194 @@
+/* Ivory satin and peony theme. Existing content, product assets and behavior are retained. */
+body.poaw-satin {
+  --cream: #fffaf5;
+  --ivory: #fffdf9;
+  --blush: #f8e7e4;
+  --blush-2: #f2d4d8;
+  --rose: #ab4668;
+  --pink: #d99aaf;
+  --plum: #792e52;
+  --plum-dark: #622b45;
+  --gold: #c7aa7c;
+  --gold-deep: #957241;
+  --sage: #79846a;
+  --olive: #5d6b3f;
+  --ink: #47353c;
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Montserrat", Arial, sans-serif;
+  --satin-art: url("../images/peony-satin.jpg");
+  --content-width: 1240px;
+  --transition: 220ms ease;
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.75;
+}
+
+body.poaw-satin *,
+body.poaw-satin *::before,
+body.poaw-satin *::after {
+  box-sizing: border-box;
+}
+
+body.poaw-satin :is(section, article)[id] {
+  scroll-margin-top: 110px;
+}
+
+body.poaw-satin :is(a, button, input):focus-visible {
+  outline: 3px solid var(--olive);
+  outline-offset: 5px;
+}
+
+body.poaw-satin .site-header {
+  position: relative !important;
+  inset: auto !important;
+  z-index: 100 !important;
+  background: var(--ivory) !important;
+  box-shadow: 0 4px 22px rgba(98, 43, 69, 0.035) !important;
+}
+
+body.poaw-satin .announcement-bar {
+  display: block !important;
+  background: #f5dedf !important;
+  border-bottom: 1px solid rgba(199, 170, 124, 0.3) !important;
+  color: var(--plum-dark) !important;
+}
+
+body.poaw-satin .announcement-bar p {
+  margin: 0;
+  padding: 8px 18px !important;
+  font-size: 10px !important;
+  line-height: 1.8;
+  letter-spacing: 0.14em !important;
+}
+
+body.poaw-satin .announcement-bar span {
+  margin: 0 10px;
+  color: var(--gold-deep);
+}
+
+body.poaw-satin .navbar {
+  min-height: 92px !important;
+  background: var(--ivory) !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(199, 170, 124, 0.45) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.poaw-satin .navbar-container {
+  width: min(1320px, calc(100% - 64px)) !important;
+  min-height: 92px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  align-items: center !important;
+  gap: 26px !important;
+}
+
+body.poaw-satin .brand {
+  min-width: 0 !important;
+  flex-shrink: 0;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+body.poaw-satin .brand-emblem {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+body.poaw-satin .brand-name {
+  font-size: 28px !important;
+  line-height: 1 !important;
+  letter-spacing: -0.02em !important;
+  white-space: nowrap !important;
+  color: var(--plum-dark) !important;
+}
+
+body.poaw-satin .brand-subtitle {
+  margin-top: 6px !important;
+  font-size: 8px !important;
+  letter-spacing: 0.31em !important;
+  color: var(--rose) !important;
+}
+
+body.poaw-satin .navigation-panel {
+  gap: 22px !important;
+}
+
+body.poaw-satin .navigation-links {
+  gap: clamp(13px, 1.6vw, 24px) !important;
+}
+
+body.poaw-satin .navigation-link {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 13px 0 !important;
+  align-items: center;
+  color: var(--plum-dark) !important;
+  border-bottom: 1px solid transparent !important;
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: 0.08em !important;
+}
+
+body.poaw-satin .navigation-link:is(:hover, .is-active) {
+  color: var(--rose) !important;
+  border-color: var(--rose) !important;
+}
+
+body.poaw-satin .navbar-button {
+  display: inline-flex !important;
+  padding: 11px 15px !important;
+  border: 1px solid var(--olive) !important;
+  background: transparent !important;
+  color: var(--olive) !important;
+  box-shadow: none !important;
+  border-radius: 2px !important;
+  white-space: nowrap;
+}
+
+body.poaw-satin .menu-toggle {
+  border: 1px solid rgba(93, 107, 63, 0.45) !important;
+  border-radius: 3px !important;
+  background: var(--ivory) !important;
+  color: var(--olive) !important;
+  box-shadow: none !important;
+}
+
+body.poaw-satin .menu-toggle__line {
+  display: block;
+  width: 21px;
+  height: 2px;
+  flex: 0 0 2px;
+  margin: 0;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+body.poaw-satin .menu-toggle.is-open .menu-toggle__line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+body.poaw-satin .menu-toggle.is-open .menu-toggle__line:nth-child(2) {
+  opacity: 0;
+}
+
+body.poaw-satin .menu-toggle.is-open .menu-toggle__line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+body.poaw-satin :is(.navbar-floral, .hero-ripple, .shop-ripple, .hero-sparkle) {
+  display: none !important;
+}
+
+body.poaw-satin .hero {
+  position: relative !important;
+  isolation: isolate;
+  height: auto !important;
+  min-height: 640px !important;
+  overflow: hidden !important;
+  background: var(--blush) var(--satin-art) center center / cover no-repeat !important;
+}
+
+body.poaw-satin .hero::before,
+body.poaw-satin .hero::after,
+body.poaw-satin .shop-header::before,
+body.poaw-satin .shop-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.poaw-satin .hero-container {
+  position: relative !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: min(1240px, 100%) !important;
+  min-height: 640px !important;
+  margin: 0 auto !important;
+  padding: 64px 24px 58px !important;
+}
+
+body.poaw-satin .hero-content {
+  width: min(680px, 65%) !important;
+  max-width: 680px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+body.poaw-satin .hero .section-eyebrow {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 0 24px !important;
+  color: var(--plum-dark) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.18em !important;
+}
+
+body.poaw-satin .hero-heading {
+  margin: 0 !important;
+  color: var(--rose) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  font-size: clamp(50px, 5.7vw, 82px) !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.035em !important;
+  text-wrap: balance;
+}
+
+body.poaw-satin .hero-heading__title {
+  display: block !important;
+  max-width: 100%;
+  margin: 0 auto !important;
+  font-size: clamp(48px, 5.2vw, 72px) !important;
+  font-weight: 500 !important;
+  line-height: 0.9 !important;
+  letter-spacing: -0.035em !important;
+  white-space: normal !important;
+}
+
+body.poaw-satin .hero-heading__part {
+  display: block !important;
+  margin: 9px 0 13px !important;
+  color: var(--plum) !important;
+  font-size: clamp(52px, 6.1vw, 86px) !important;
+  font-weight: 500 !important;
+  font-style: italic !important;
+  line-height: 0.95 !important;
+}
+
+body.poaw-satin .hero-heading__availability {
+  display: block !important;
+  margin: 0 !important;
+  color: var(--rose) !important;
+  font-family: var(--font-body) !important;
+  font-size: clamp(15px, 1.8vw, 24px) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.17em !important;
+  line-height: 1.5 !important;
+}
+
+body.poaw-satin .hero .gold-divider {
+  display: flex !important;
+  width: 130px !important;
+  margin: 24px auto 18px !important;
+}
+
+body.poaw-satin .hero-tagline {
+  margin: 0 auto 28px !important;
+  color: var(--plum-dark) !important;
+  font-family: var(--font-heading) !important;
+  font-size: clamp(21px, 2.2vw, 28px) !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+body.poaw-satin .hero-artwork,
+body.poaw-satin .hero-description,
+body.poaw-satin .hero-scripture {
+  display: none !important;
+}
+
+body.poaw-satin :is(.primary-button, .product-card__button),
+body.poaw-satin .hero .primary-button {
+  min-height: 46px !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 13px 25px !important;
+  border: 1px solid var(--olive) !important;
+  border-radius: 3px !important;
+  background: var(--olive) !important;
+  color: #fffdf8 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.075em !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  box-shadow: 0 6px 16px rgba(70, 79, 47, 0.12) !important;
+  transition: background var(--transition), box-shadow var(--transition) !important;
+}
+
+body.poaw-satin :is(.primary-button, .product-card__button)::before {
+  content: none !important;
+}
+
+body.poaw-satin :is(.primary-button, .product-card__button):hover,
+body.poaw-satin .hero .primary-button:hover {
+  background: #4d5933 !important;
+  border-color: #4d5933 !important;
+  color: #fffdf8 !important;
+  transform: none !important;
+  box-shadow: 0 8px 20px rgba(70, 79, 47, 0.19) !important;
+}
+
+body.poaw-satin .gold-divider {
+  color: var(--gold-deep) !important;
+}
+
+body.poaw-satin .gold-divider span {
+  background: var(--gold) !important;
+}
+
+body.poaw-satin .shop-section {
+  position: relative !important;
+  padding: 76px 0 90px !important;
+  background: var(--ivory) !important;
+  background-attachment: scroll !important;
+}
+
+body.poaw-satin .shop-wrapper {
+  width: min(1240px, calc(100% - 64px)) !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.poaw-satin .shop-header {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 780px !important;
+  min-height: 0 !important;
+  margin: 0 auto 42px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  text-align: center !important;
+}
+
+body.poaw-satin .section-eyebrow {
+  color: var(--rose) !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.17em !important;
+  line-height: 1.8 !important;
+}
+
+body.poaw-satin .shop-header .section-eyebrow {
+  display: flex !important;
+  margin: 0 0 13px !important;
+}
+
+body.poaw-satin .shop-heading {
+  margin: 0 !important;
+  color: var(--plum) !important;
+  font-size: clamp(38px, 4.2vw, 58px) !important;
+  font-weight: 500 !important;
+  line-height: 1.07 !important;
+  letter-spacing: -0.025em !important;
+}
+
+body.poaw-satin .shop-introduction {
+  display: block !important;
+  max-width: 650px !important;
+  margin: 0 auto !important;
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+  color: #6d515f !important;
+}
+
+body.poaw-satin .product-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+}
+
+body.poaw-satin .product-card {
+  grid-column: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-width: 0;
+  background: #fffdf9 !important;
+  border: 1px solid rgba(199, 170, 124, 0.45) !important;
+  border-radius: 3px !important;
+  box-shadow: 0 10px 35px rgba(108, 65, 73, 0.065) !important;
+  transform: none !important;
+  overflow: hidden;
+}
+
+body.poaw-satin .product-card:hover {
+  box-shadow: 0 14px 42px rgba(108, 65, 73, 0.13) !important;
+}
+
+body.poaw-satin .product-card .product-card__frame {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: none !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.poaw-satin .product-card .product-card__image {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  padding: 9px !important;
+  overflow: hidden !important;
+  background: #fcf2eb !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(199, 170, 124, 0.2) !important;
+  border-radius: 0 !important;
+}
+
+body.poaw-satin .product-card .product-card__image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+body.poaw-satin .product-card .product-card__content {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 28px 26px 30px !important;
+  text-align: center !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+body.poaw-satin .product-card__category {
+  margin: 0 0 12px !important;
+  color: #836542 !important;
+  font-size: 9px !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.14em !important;
+}
+
+body.poaw-satin .product-card__title {
+  margin: 0 0 13px !important;
+  color: var(--plum) !important;
+  font-size: clamp(25px, 2.4vw, 32px) !important;
+  font-weight: 600 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.015em !important;
+  overflow-wrap: anywhere;
+}
+
+body.poaw-satin .product-card__price {
+  margin: 0 0 15px !important;
+  color: var(--rose) !important;
+  font-size: 33px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+}
+
+body.poaw-satin .product-card__details {
+  margin: 0 0 24px !important;
+  color: #654f5a !important;
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+  overflow-wrap: anywhere;
+}
+
+body.poaw-satin .product-card__button {
+  align-self: center !important;
+  width: auto !important;
+  min-width: min(190px, 100%) !important;
+  max-width: 100%;
+  margin-top: auto !important;
+}
+
+body.poaw-satin .product-badge {
+  top: 17px !important;
+  left: 17px !important;
+  background: var(--rose) !important;
+  padding: 7px 11px !important;
+  font-size: 9px !important;
+}
+
+body.poaw-satin .product-card .bookmark-product-art {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  padding: 30px 20px !important;
+  background: linear-gradient(135deg, #fff4eb, #f5e3df) !important;
+}
+
+body.poaw-satin .bookmark-mini {
+  min-width: 0;
+  min-height: 0 !important;
+  height: 85%;
+}
+
+body.poaw-satin .poaw-inner-page {
+  background: var(--ivory) !important;
+}
+
+body.poaw-satin .inner-page-intro {
+  max-width: none;
+  margin: 0;
+  padding: 88px max(24px, 22%) 76px;
+  background: var(--satin-art) center / cover no-repeat;
+}
+
+body.poaw-satin :is(.inner-page-intro h1, .inner-page-intro h2) {
+  color: var(--plum);
+  font-size: clamp(42px, 5.3vw, 68px);
+  font-weight: 500;
+}
+
+body.poaw-satin .inner-page-intro p:not(.section-eyebrow) {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #6d515f;
+}
+
+body.poaw-satin :is(.study-section, .learn-details-section, .resources-section) {
+  padding: 84px 32px !important;
+  background: var(--cream) !important;
+}
+
+body.poaw-satin :is(.study-inner, .content-section-inner) {
+  width: min(1200px, 100%);
+  max-width: 1200px;
+  margin: auto;
+}
+
+body.poaw-satin :is(.study-heading, .community-heading, .resources-section h2, .contact-section-restored h2, .ministry-signup h2, .community-detail h2, .shop-discover h2) {
+  color: var(--plum) !important;
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 4.5vw, 60px) !important;
+  font-weight: 500 !important;
+  line-height: 1.12 !important;
+}
+
+body.poaw-satin .study-intro {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #654f5a;
+}
+
+body.poaw-satin :is(.study-grid, .learn-details-grid, .resources-grid-restored, .shop-discover-grid) {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 32px auto 0;
+}
+
+body.poaw-satin :is(.study-card, .learn-detail, .resources-grid-restored > article, .shop-discover-grid > a) {
+  padding: 30px;
+  border: 1px solid rgba(199, 170, 124, 0.4);
+  background: rgba(255, 253, 249, 0.95);
+  box-shadow: 0 8px 26px rgba(108, 65, 73, 0.045);
+  border-radius: 3px;
+  min-width: 0;
+}
+
+body.poaw-satin :is(.study-card h3, .resources-grid-restored h3, .shop-discover-grid h3, .learn-detail h2) {
+  color: var(--plum);
+  font-family: var(--font-heading);
+  font-size: 30px;
+  line-height: 1.12;
+  font-weight: 600;
+}
+
+body.poaw-satin :is(.study-card p, .learn-detail li, .resources-grid-restored p, .shop-discover-grid p) {
+  color: #654f5a;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+body.poaw-satin :is(.study-day, .study-key, .resource-type) {
+  color: var(--rose) !important;
+}
+
+body.poaw-satin .learn-details-section .inner-page-intro {
+  padding: 0 12px 28px;
+  background: none;
+}
+
+body.poaw-satin .poaw-author {
+  padding: 88px 32px !important;
+  background: linear-gradient(120deg, #fffdf8, #fcf0eb) !important;
+}
+
+body.poaw-satin .poaw-author__container {
+  width: min(1200px, 100%) !important;
+  max-width: 1200px !important;
+  margin: auto !important;
+}
+
+body.poaw-satin .poaw-author__header {
+  width: 100% !important;
+  margin: 0 auto 46px !important;
+}
+
+body.poaw-satin .poaw-author__eyebrow {
+  color: var(--rose) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.2em !important;
+}
+
+body.poaw-satin .poaw-author__name {
+  color: var(--plum) !important;
+  font-size: clamp(43px, 5vw, 65px) !important;
+  font-weight: 500 !important;
+}
+
+body.poaw-satin .poaw-author__title {
+  margin-top: 16px !important;
+  color: #876443 !important;
+  font-size: 10px !important;
+  line-height: 1.9 !important;
+  letter-spacing: 0.13em !important;
+}
+
+body.poaw-satin .poaw-author__layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
+  gap: 58px !important;
+  align-items: start !important;
+}
+
+body.poaw-satin .poaw-author__portrait {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+body.poaw-satin .poaw-author__photo-frame {
+  padding: 10px !important;
+  border: 1px solid var(--gold) !important;
+  border-radius: 3px !important;
+  background: #fffaf5 !important;
+  box-shadow: 0 20px 40px rgba(98, 43, 69, 0.1) !important;
+}
+
+body.poaw-satin .poaw-author__photo {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+}
+
+body.poaw-satin .poaw-author__story {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+body.poaw-satin .poaw-author__story p {
+  font-size: 14px !important;
+  line-height: 1.95 !important;
+  color: #654f5a !important;
+}
+
+body.poaw-satin .poaw-author__story .poaw-author__lead {
+  margin-top: 0;
+  color: var(--plum) !important;
+  font-family: var(--font-heading);
+  font-size: 25px !important;
+  line-height: 1.45 !important;
+}
+
+body.poaw-satin .poaw-author__about-heading {
+  color: var(--rose) !important;
+  font-size: 25px !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+body.poaw-satin .poaw-author__quote {
+  width: min(820px, 100%) !important;
+  max-width: 820px !important;
+  margin: 52px auto 0 !important;
+  padding: 28px 18px !important;
+  background: transparent !important;
+  color: var(--plum) !important;
+  border: 0 !important;
+  border-top: 1px solid var(--gold) !important;
+  border-bottom: 1px solid var(--gold) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: clamp(27px, 3vw, 36px) !important;
+}
+
+body.poaw-satin .poaw-author__legacy {
+  width: min(820px, 100%) !important;
+  margin: 32px auto 0 !important;
+}
+
+body.poaw-satin .poaw-author__scripture {
+  font-size: 20px !important;
+  color: #70515e !important;
+}
+
+body.poaw-satin .poaw-author__lineage {
+  font-size: 11px !important;
+  line-height: 2 !important;
+  letter-spacing: 0.08em !important;
+  color: var(--plum) !important;
+}
+
+body.poaw-satin .community-section {
+  padding: 100px 24px !important;
+  background: var(--blush) var(--satin-art) center / cover no-repeat !important;
+}
+
+body.poaw-satin .community-section__inner {
+  width: min(720px, 72%) !important;
+  margin: auto !important;
+  padding: 25px 32px;
+  background: rgba(255, 251, 247, 0.8);
+  border: 1px solid rgba(199, 170, 124, 0.25);
+  border-radius: 3px;
+}
+
+body.poaw-satin .community-subheading {
+  margin: 20px auto 28px !important;
+  font-size: 14px !important;
+  color: #654f5a !important;
+}
+
+body.poaw-satin .ministry-signup {
+  padding: 80px 28px !important;
+  background: var(--ivory) !important;
+  border-top: 1px solid rgba(199, 170, 124, 0.3);
+  border-bottom: 1px solid rgba(199, 170, 124, 0.3);
+  text-align: center;
+}
+
+body.poaw-satin .ministry-signup__inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+body.poaw-satin .ministry-signup__inner > p:not(.section-eyebrow) {
+  color: #654f5a;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+body.poaw-satin .ministry-signup__perks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+  margin: 30px 0;
+  color: var(--plum);
+  font-size: 12px;
+}
+
+body.poaw-satin :is(.community-detail, .shop-discover, .contact-section-restored) {
+  padding: 80px 32px !important;
+  background: #fbefeb !important;
+}
+
+body.poaw-satin .contact-restored-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin: 36px 0;
+}
+
+body.poaw-satin .contact-restored-grid :is(p, a) {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+body.poaw-satin .site-footer {
+  min-height: 300px !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(rgba(255, 244, 240, 0.62), rgba(247, 221, 220, 0.8)), var(--satin-art) center bottom / cover no-repeat !important;
+  color: var(--plum-dark) !important;
+  border-top: 1px solid rgba(199, 170, 124, 0.4);
+}
+
+body.poaw-satin .footer-overlay {
+  padding: 62px 24px !important;
+  background: transparent !important;
+}
+
+body.poaw-satin .footer-nav {
+  gap: 14px 26px !important;
+}
+
+body.poaw-satin .footer-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--plum-dark) !important;
+  font-size: 10px !important;
+}
+
+body.poaw-satin .footer-copy {
+  font-size: 10px !important;
+  line-height: 1.8;
+  letter-spacing: 0.07em !important;
+}
+
+/* The long-form book page keeps its supplied 27-section sequence. */
+body.poaw-page-get-the-book main > section:not(.hero) {
+  padding: 52px 32px !important;
+  background: var(--ivory) !important;
+}
+
+body.poaw-page-get-the-book main > section:nth-child(even):not(.hero) {
+  background: #fbf0eb !important;
+}
+
+body.poaw-page-get-the-book main > section > .hero-container {
+  min-height: 0 !important;
+  padding: 10px 20px !important;
+}
+
+body.poaw-page-get-the-book main > section > .shop-container {
+  width: min(1120px, 100%);
+  margin: auto;
+}
+
+body.poaw-page-get-the-book main > section:not(#products) .product-grid {
+  grid-template-columns: minmax(0, 1fr) !important;
+  max-width: 960px;
+  margin: auto;
+}
+
+body.poaw-page-get-the-book main > section:not(#products) .product-card .product-card__content {
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding: 40px 44px !important;
+}
+
+body.poaw-page-get-the-book main > section:not(#products) .product-card__title {
+  font-size: clamp(30px, 3.6vw, 44px) !important;
+}
+
+body.poaw-page-get-the-book .product-card__details {
+  font-size: 14px !important;
+  line-height: 1.95 !important;
+}
+
+body.poaw-page-get-the-book :is(ul, ol).product-card__details {
+  padding-left: 24px;
+}
+
+body.poaw-page-get-the-book .formkit-form {
+  width: 100%;
+  max-width: 620px;
+}
+
+body.poaw-satin input[type="email"] {
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 16px;
+  padding: 13px 16px;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  background: #fffdf9;
+  color: var(--ink);
+  font: 14px var(--font-body);
+}
+
+@media (max-width: 1160px) and (min-width: 901px) {
+  body.poaw-satin .navbar-container {
+    width: calc(100% - 40px) !important;
+    gap: 20px !important;
+  }
+  body.poaw-satin .navbar-button {
+    display: none !important;
+  }
+  body.poaw-satin .brand-name {
+    font-size: 25px !important;
+  }
+  body.poaw-satin .navigation-links {
+    gap: 15px !important;
+  }
+}
+
+@media (min-width: 901px) {
+  body.poaw-satin .menu-toggle {
+    display: none !important;
+  }
+  body.poaw-satin .navigation-panel {
+    position: static !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body.poaw-satin .navbar,
+  body.poaw-satin .navbar-container {
+    min-height: 78px !important;
+  }
+  body.poaw-satin .navbar-container {
+    width: calc(100% - 40px) !important;
+    position: relative;
+  }
+  body.poaw-satin .menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+  }
+  body.poaw-satin .navigation-panel {
+    position: absolute !important;
+    top: 100% !important;
+    left: -20px !important;
+    right: -20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    max-height: 0 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    padding: 0 24px !important;
+    gap: 14px !important;
+    background: var(--ivory) !important;
+    border-bottom: 1px solid var(--gold) !important;
+    box-shadow: 0 15px 25px rgba(98, 43, 69, 0.08) !important;
+  }
+  body.poaw-satin .navigation-panel.is-open {
+    max-height: 80dvh !important;
+    overflow-y: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 18px 24px 26px !important;
+  }
+  body.poaw-satin .navigation-links {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+  body.poaw-satin .navigation-link {
+    justify-content: center;
+    width: 100%;
+    min-height: 46px;
+    font-size: 12px !important;
+  }
+  body.poaw-satin .navbar-button {
+    align-self: center;
+  }
+  body.poaw-satin .hero,
+  body.poaw-satin .hero-container {
+    min-height: 560px !important;
+  }
+  body.poaw-satin .hero-content {
+    width: 76% !important;
+  }
+  body.poaw-satin .product-grid,
+  body.poaw-satin :is(.study-grid, .learn-details-grid, .resources-grid-restored, .shop-discover-grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  body.poaw-satin .poaw-author__layout {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+  body.poaw-satin .poaw-author__portrait {
+    max-width: 580px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body.poaw-satin .announcement-bar p {
+    padding: 7px 8px !important;
+    font-size: 8px !important;
+    letter-spacing: 0.08em !important;
+  }
+  body.poaw-satin .announcement-bar span {
+    margin: 0 4px;
+  }
+  body.poaw-satin .brand-name {
+    font-size: 24px !important;
+  }
+  body.poaw-satin .brand-subtitle {
+    font-size: 7px !important;
+  }
+  body.poaw-satin .brand-emblem {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  body.poaw-satin .navbar-container {
+    width: calc(100% - 28px) !important;
+    gap: 12px !important;
+  }
+  body.poaw-satin .navigation-panel {
+    left: -14px !important;
+    right: -14px !important;
+  }
+  body.poaw-satin .hero {
+    min-height: 575px !important;
+    background-position: center !important;
+    background-size: auto 100% !important;
+  }
+  body.poaw-satin .hero-container {
+    min-height: 575px !important;
+    padding: 58px 20px !important;
+  }
+  body.poaw-satin .hero::before,
+  body.poaw-satin .hero::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    inset: 0 auto 0 0 !important;
+    z-index: 0 !important;
+    width: 23% !important;
+    height: 100% !important;
+    background: var(--satin-art) left top / auto 100% no-repeat !important;
+    filter: none !important;
+    opacity: 0.95 !important;
+    pointer-events: none;
+    mask-image: linear-gradient(to right, #000 55%, transparent);
+  }
+  body.poaw-satin .hero::after {
+    inset: 0 0 0 auto !important;
+    background-position: right top !important;
+    mask-image: linear-gradient(to left, #000 55%, transparent);
+  }
+  body.poaw-satin .hero-content {
+    width: 100% !important;
+    max-width: 400px !important;
+    padding: 24px 10px !important;
+    background: rgba(255, 248, 241, 0.72);
+    border: 1px solid rgba(255, 253, 249, 0.5);
+    border-radius: 3px;
+  }
+  body.poaw-satin .hero .section-eyebrow {
+    margin-bottom: 20px !important;
+    font-size: 8px !important;
+    letter-spacing: 0.1em !important;
+  }
+  body.poaw-satin .hero-heading,
+  body.poaw-satin .hero-heading__title {
+    font-size: clamp(29px, 9.5vw, 44px) !important;
+  }
+  body.poaw-satin .hero-heading__part {
+    font-size: 58px !important;
+  }
+  body.poaw-satin .hero-heading__availability {
+    font-size: 14px !important;
+    letter-spacing: 0.15em !important;
+  }
+  body.poaw-satin .hero-tagline {
+    font-size: 22px !important;
+  }
+  body.poaw-satin .shop-section {
+    padding: 54px 0 62px !important;
+  }
+  body.poaw-satin .shop-wrapper {
+    width: calc(100% - 36px) !important;
+  }
+  body.poaw-satin .shop-header {
+    margin-bottom: 32px !important;
+  }
+  body.poaw-satin .product-grid,
+  body.poaw-satin :is(.study-grid, .learn-details-grid, .resources-grid-restored, .shop-discover-grid) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+  }
+  body.poaw-satin .product-card .product-card__content {
+    padding: 26px 24px 30px !important;
+  }
+  body.poaw-satin .product-card__title {
+    font-size: 29px !important;
+  }
+  body.poaw-satin .product-card__details {
+    font-size: 13px !important;
+  }
+  body.poaw-satin .inner-page-intro {
+    padding: 65px 26px;
+    background-image: linear-gradient(rgba(255, 250, 245, 0.6), rgba(255, 250, 245, 0.6)), var(--satin-art);
+  }
+  body.poaw-satin :is(.study-section, .learn-details-section, .resources-section, .poaw-author, .community-detail, .shop-discover, .contact-section-restored) {
+    padding: 58px 22px !important;
+  }
+  body.poaw-satin .poaw-author__title {
+    font-size: 9px !important;
+  }
+  body.poaw-satin .poaw-author__story,
+  body.poaw-satin .poaw-author__header {
+    width: 100% !important;
+  }
+  body.poaw-satin .community-section {
+    padding: 68px 20px !important;
+  }
+  body.poaw-satin .community-section__inner {
+    width: 100% !important;
+    padding: 32px 22px;
+    background: rgba(255, 251, 247, 0.9);
+  }
+  body.poaw-satin .contact-restored-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.poaw-satin .footer-nav {
+    gap: 6px 20px !important;
+  }
+  body.poaw-satin .footer-copy {
+    font-size: 9px !important;
+  }
+  body.poaw-page-get-the-book main > section:not(.hero) {
+    padding: 28px 18px !important;
+  }
+  body.poaw-page-get-the-book main > section:not(#products) .product-card .product-card__content {
+    padding: 28px 22px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  body.poaw-satin .brand-name {
+    font-size: 20px !important;
+  }
+  body.poaw-satin .brand-emblem {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  body.poaw-satin .brand {
+    gap: 8px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  body.poaw-satin *,
+  body.poaw-satin *::before,
+  body.poaw-satin *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
