@@ -1206,13 +1206,28 @@ body.poaw-satin .shop-section :is(.shop-wrapper,.product-card,.product-card__fra
 body.poaw-satin .shop-section .product-card__frame {
  border: 1px solid rgba(201,168,106,.5) !important;
 }
-body.poaw-satin .shop-section .product-card__image img {
- display:block !important;
- width:100% !important;
- height:100% !important;
- object-fit:contain !important;
- opacity:1 !important;
- visibility:visible !important;
+body.poaw-satin .shop-section .product-card .product-card__image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 220px !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  background: rgba(255,250,247,.28) !important;
+}
+body.poaw-satin .shop-section .product-card .product-card__image img {
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 390px !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  z-index: 1 !important;
 }
 body.poaw-satin :is(.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
  background: linear-gradient(rgba(255,249,245,.45),rgba(255,249,245,.55)),url("../images/peony-satin.jpg") center / cover no-repeat !important;
