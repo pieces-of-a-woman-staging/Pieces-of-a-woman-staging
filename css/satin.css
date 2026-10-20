@@ -1196,10 +1196,7 @@ body.poaw-satin input[type="email"] {
 
 
 /* Single consolidated satin-glass treatment. */
-body.poaw-satin .shop-section {
- background: url("../images/peony-satin.jpg") center top / cover no-repeat !important;
-}
-body.poaw-satin .shop-section :is(.shop-wrapper,.product-card,.product-card__frame,.product-card__image,.product-card__content) {
+body.poaw-satin .shop-section :is(.product-card,.product-card__frame,.product-card__image,.product-card__content) {
  background-color: rgba(255,249,245,.44) !important;
  background-image: none !important;
 }
