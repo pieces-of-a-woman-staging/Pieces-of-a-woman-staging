@@ -339,7 +339,7 @@ body.poaw-satin .gold-divider span {
 body.poaw-satin .shop-section {
   position: relative !important;
   padding: 76px 0 90px !important;
-  background: var(--ivory) !important;
+  background: url("../images/peony-satin.jpg") center top / cover no-repeat !important;
   background-attachment: scroll !important;
 }
 
