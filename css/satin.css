@@ -360,6 +360,7 @@ body.poaw-satin .shop-header {
   min-height: 0 !important;
   margin: 0 auto 42px !important;
   padding: 0 !important;
+  /* Reveal the shop section's satin instead of restarting the artwork here. */
   background: transparent !important;
   text-align: center !important;
 }
@@ -1195,15 +1196,18 @@ body.poaw-satin input[type="email"] {
 
 
 
-/* Single consolidated satin-glass treatment. */
-body.poaw-satin .shop-section :is(.product-card,.product-card__frame,.product-card__image,.product-card__content) {
- background-color: rgba(255,249,245,.44) !important;
- background-image: none !important;
+/* One readable satin-glass layer per card; inner surfaces stay transparent. */
+body.poaw-satin .shop-section .product-card {
+  background: rgba(255,249,245,.65) !important;
+}
+body.poaw-satin .shop-section :is(.product-card__frame,.product-card__image,.product-card__content):not(.bookmark-product-art) {
+  background: transparent !important;
 }
 body.poaw-satin .shop-section .product-card__frame {
  border: 1px solid rgba(201,168,106,.5) !important;
 }
-body.poaw-satin .shop-section .product-card .product-card__image {
+/* The bookmark artwork retains its own grid, proportions, padding and gradient. */
+body.poaw-satin .shop-section .product-card .product-card__image:not(.bookmark-product-art) {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1212,14 +1216,16 @@ body.poaw-satin .shop-section .product-card .product-card__image {
   min-height: 220px !important;
   aspect-ratio: auto !important;
   overflow: visible !important;
-  background: rgba(255,250,247,.28) !important;
+  background: transparent !important;
 }
-body.poaw-satin .shop-section .product-card .product-card__image img {
+body.poaw-satin .shop-section .product-card .product-card__image:not(.bookmark-product-art) img {
   display: block !important;
-  width: auto !important;
+  /* Reserve the final photo size before lazy downloads complete. */
+  width: min(100%, calc(390px * 1122 / 1402)) !important;
   max-width: 100% !important;
   height: auto !important;
   max-height: 390px !important;
+  aspect-ratio: 1122 / 1402 !important;
   object-fit: contain !important;
   opacity: 1 !important;
   visibility: visible !important;
@@ -1250,7 +1256,7 @@ body.poaw-satin.page-reference-design .shop-section {
   background-attachment: scroll !important;
 }
 body.poaw-satin.page-reference-design .shop-header {
-  padding-top: 26px !important;
+  padding: 26px 20px 24px !important;
 }
 body.poaw-satin .site-footer {
   background-image:
