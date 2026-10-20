@@ -1280,3 +1280,16 @@ body.poaw-satin .shop-section .product-card__image img {
  height: auto;
  object-fit: contain;
 }
+/* Transparent pink satin shop design */
+body.poaw-satin .shop-section {
+  background:
+    url("../images/peony-satin.jpg")
+    center / cover no-repeat !important;
+}
+
+body.poaw-satin .shop-section .product-card,
+body.poaw-satin .shop-section .product-card__frame,
+body.poaw-satin .shop-section .product-card__content {
+  background: rgba(255, 250, 247, 0.45) !important;
+}
+
