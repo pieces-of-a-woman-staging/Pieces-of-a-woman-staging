@@ -1275,3 +1275,174 @@ body.poaw-satin .ministry-signup {
 body.poaw-satin :is(.study-card,.learn-details-card,.resource-card,.shop-discover-card,.community-section__inner,.poaw-testimonials__card,.poaw-author__story,.contact-restored-card) {
  background:rgba(255,250,247,.65) !important;
 }
+
+
+/* Approved phone mockup: ivory cards, blush satin, plum type and olive buttons. */
+@media (max-width: 600px) {
+  body.poaw-satin .hero {
+    min-height: 500px !important;
+    background-color: #f8e7e4 !important;
+  }
+  body.poaw-satin .hero-container {
+    min-height: 500px !important;
+    padding: 48px 20px !important;
+  }
+  body.poaw-satin .hero-content {
+    padding: 24px 12px !important;
+    background: rgba(255, 250, 245, 0.55);
+    border: 0 !important;
+    border-radius: 16px;
+  }
+  body.poaw-satin .hero-heading__title {
+    color: #792e52 !important;
+    font-size: clamp(29px, 8.8vw, 43px) !important;
+    line-height: 1 !important;
+  }
+  body.poaw-satin .hero-heading__part {
+    color: #957241 !important;
+    font-size: clamp(52px, 15vw, 68px) !important;
+  }
+  body.poaw-satin .hero-tagline {
+    font-style: italic;
+    font-size: clamp(20px, 5.5vw, 24px) !important;
+  }
+  body.poaw-satin .hero .primary-button,
+  body.poaw-satin .shop-section .product-card__button {
+    min-height: 46px !important;
+    border: 1px solid #c7aa7c !important;
+    border-radius: 999px !important;
+    background: #5d6b3f !important;
+    color: #fffdf8 !important;
+    box-shadow: 0 5px 14px rgba(70, 79, 47, 0.16) !important;
+  }
+  body.poaw-satin .shop-section,
+  body.poaw-satin.page-reference-design .shop-section {
+    padding: 40px 0 54px !important;
+    background: #fffaf5 !important;
+  }
+  body.poaw-satin .shop-section .shop-wrapper {
+    width: calc(100% - 28px) !important;
+    max-width: 520px !important;
+  }
+  body.poaw-satin .shop-section .shop-header {
+    margin: 0 auto 26px !important;
+    padding: 0 4px !important;
+    background: transparent !important;
+    border: 0 !important;
+  }
+  body.poaw-satin .shop-section .shop-heading {
+    font-size: clamp(31px, 8.6vw, 41px) !important;
+    line-height: 1.08 !important;
+    text-wrap: balance;
+  }
+  body.poaw-satin .shop-section .shop-introduction {
+    margin-top: 12px !important;
+    font-size: 13px !important;
+    line-height: 1.75 !important;
+  }
+  body.poaw-satin .shop-section .product-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+  body.poaw-satin .shop-section .product-card {
+    grid-column: auto !important;
+    position: relative;
+    background: linear-gradient(135deg, #fffdf9, #fcf2ec) !important;
+    border: 1px solid #c7aa7c !important;
+    border-radius: 13px !important;
+    box-shadow: 0 8px 22px rgba(108, 65, 73, 0.09) !important;
+    overflow: hidden;
+  }
+  body.poaw-satin .shop-section .product-card .product-card__frame {
+    display: grid !important;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.65fr) !important;
+    align-items: start !important;
+    gap: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+  body.poaw-satin .shop-section .product-card .product-card__image:not(.bookmark-product-art) {
+    position: relative;
+    min-height: 0 !important;
+    padding: 14px 0 14px 12px !important;
+    overflow: hidden !important;
+    aspect-ratio: auto !important;
+    background: transparent !important;
+    border: 0 !important;
+  }
+  body.poaw-satin .shop-section .product-card .product-card__image:not(.bookmark-product-art) img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 1122 / 1402 !important;
+    object-fit: contain !important;
+    border-radius: 5px;
+  }
+  body.poaw-satin .shop-section .product-card .product-card__content {
+    min-width: 0;
+    padding: 17px 14px 18px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    background: transparent !important;
+  }
+  body.poaw-satin .shop-section .product-card__category {
+    margin-bottom: 8px !important;
+    font-size: 8px !important;
+    letter-spacing: 0.09em !important;
+  }
+  body.poaw-satin .shop-section .product-card__title {
+    margin-bottom: 8px !important;
+    font-size: clamp(21px, 5.7vw, 26px) !important;
+    line-height: 1.12 !important;
+    color: #792e52 !important;
+    overflow-wrap: break-word;
+  }
+  body.poaw-satin .shop-section .product-card__price {
+    margin-bottom: 10px !important;
+    color: #792e52 !important;
+    font-size: 30px !important;
+  }
+  body.poaw-satin .shop-section .product-card__details {
+    margin-bottom: 16px !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    color: #654f5a !important;
+  }
+  body.poaw-satin .shop-section .product-card__button {
+    align-self: flex-start !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+    padding: 11px 16px !important;
+    font-size: 11px !important;
+    letter-spacing: 0.02em !important;
+    white-space: normal;
+    text-align: center;
+  }
+  body.poaw-satin .shop-section .product-badge {
+    top: 7px !important;
+    left: 7px !important;
+    padding: 4px 7px !important;
+    font-size: 8px !important;
+    z-index: 2;
+  }
+  body.poaw-satin .shop-section .product-card .bookmark-product-art {
+    min-height: 150px !important;
+    height: auto !important;
+    padding: 22px 7px !important;
+    gap: 3px !important;
+    align-self: start;
+    overflow: hidden !important;
+  }
+  body.poaw-satin .shop-section .bookmark-mini {
+    height: auto;
+    min-height: 105px !important;
+    padding: 5px 2px;
+    overflow-wrap: anywhere;
+  }
+}
