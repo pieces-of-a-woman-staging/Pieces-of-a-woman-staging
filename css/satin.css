@@ -1254,3 +1254,29 @@ body.poaw-satin :is(.product-card__content,.study-card__content) {
     background: linear-gradient(rgba(255,249,245,.64),rgba(255,246,242,.72)), url("../images/peony-satin.jpg") center center / cover no-repeat !important;
   }
 }
+
+
+/* Satin glass storefront: visible floral art behind translucent product panels. */
+body.poaw-satin .shop-section {
+ background: url("../images/peony-satin.jpg") center top / cover no-repeat !important;
+}
+body.poaw-satin .shop-section .shop-wrapper {
+ background: transparent !important;
+}
+body.poaw-satin .shop-section .product-card,
+body.poaw-satin .shop-section .product-card__frame,
+body.poaw-satin .shop-section .product-card__image,
+body.poaw-satin .shop-section .product-card__content {
+ background: rgba(255,250,247,.52) !important;
+ background-image: none !important;
+}
+body.poaw-satin .shop-section .product-card__frame {
+ border: 1px solid rgba(201,168,106,.6) !important;
+ box-shadow: 0 16px 38px rgba(96,40,63,.12);
+}
+body.poaw-satin .shop-section .product-card__image img {
+ display: block;
+ max-width: 100%;
+ height: auto;
+ object-fit: contain;
+}
