@@ -776,8 +776,8 @@ body.poaw-satin .community-subheading {
 body.poaw-satin .ministry-signup {
   padding: 80px 28px !important;
   background: var(--ivory) !important;
-  border-top: 1px solid rgba(199, 170, 124, 0.3);
-  border-bottom: 1px solid rgba(199, 170, 124, 0.3);
+  border-top: 0;
+  border-bottom: 0;
   text-align: center;
 }
 
@@ -825,7 +825,7 @@ body.poaw-satin .site-footer {
   padding: 0 !important;
   background: linear-gradient(rgba(255, 244, 240, 0.62), rgba(247, 221, 220, 0.8)), var(--satin-art) center bottom / cover no-repeat !important;
   color: var(--plum-dark) !important;
-  border-top: 1px solid rgba(199, 170, 124, 0.4);
+  border-top: 0;
 }
 
 body.poaw-satin .footer-overlay {
@@ -1236,6 +1236,35 @@ body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resourc
   background-size: 100% 100%, 100% 100%, cover !important;
   background-repeat: no-repeat !important;
   background-attachment: scroll !important;
+}
+/* Homepage-specific precedence over legacy .page-reference-design shop styles. */
+body.poaw-satin.page-reference-design .shop-section {
+  background-color: #fff9f5 !important;
+  background-image:
+    linear-gradient(to bottom, rgba(255,249,245,.90), rgba(255,249,245,0) 12%, rgba(255,249,245,0) 88%, rgba(255,249,245,.90)),
+    linear-gradient(rgba(255,249,245,.36), rgba(255,249,245,.36)),
+    url("../images/peony-satin.jpg") !important;
+  background-position: center, center, center !important;
+  background-size: 100% 100%, 100% 100%, cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+}
+body.poaw-satin.page-reference-design .shop-header {
+  padding-top: 26px !important;
+}
+body.poaw-satin .site-footer {
+  background-image:
+    linear-gradient(to bottom, rgba(255,249,245,.92), rgba(255,249,245,0) 20%, rgba(255,249,245,0) 88%, rgba(255,249,245,.92)),
+    linear-gradient(rgba(255,249,245,.50), rgba(255,249,245,.50)),
+    url("../images/peony-satin.jpg") !important;
+  background-position: center, center, center !important;
+  background-size: 100% 100%, 100% 100%, cover !important;
+  background-repeat: no-repeat !important;
+  border-top: 0 !important;
+}
+body.poaw-satin .ministry-signup {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
 }
 body.poaw-satin :is(.study-card,.learn-details-card,.resource-card,.shop-discover-card,.community-section__inner,.poaw-testimonials__card,.poaw-author__story,.contact-restored-card) {
  background:rgba(255,250,247,.65) !important;
