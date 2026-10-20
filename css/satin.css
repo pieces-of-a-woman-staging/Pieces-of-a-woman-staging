@@ -1194,102 +1194,29 @@ body.poaw-satin input[type="email"] {
 }
 
 
-/* Shared translucent satin surfaces: match the homepage hero's airy glass finish
-   while retaining readable text and sharp product photography. */
-body.poaw-satin {
-  background: #fff8f4 url("../images/peony-satin.jpg") center top / cover fixed no-repeat;
-}
-body.poaw-satin :is(
-  .shop-section, .study-section, .learn-details-section, .resources-section,
-  .poaw-author, .community-detail, .shop-discover, .contact-section-restored,
-  .community-section, .inner-page-intro, .last-call, .poaw-testimonials
-) {
-  background-color: rgba(255, 249, 245, .68) !important;
-}
-body.poaw-satin :is(
-  .product-card, .study-card, .community-section__inner,
-  .poaw-testimonials__card, .poaw-author__story, .shop-discover-card,
-  .learn-details-card, .resource-card, .contact-restored-card
-) {
-  background-color: rgba(255, 251, 247, .76) !important;
-  border-color: rgba(201, 168, 106, .43) !important;
-  box-shadow: 0 14px 40px rgba(98, 43, 69, .065);
-}
-body.poaw-satin :is(.product-card__content, .study-card__content) {
-  background-color: transparent !important;
-}
-@media (max-width: 700px) {
-  body.poaw-satin {
-    background-attachment: scroll;
-  }
-  body.poaw-satin :is(
-    .shop-section, .study-section, .learn-details-section, .resources-section,
-    .poaw-author, .community-detail, .shop-discover, .contact-section-restored,
-    .community-section, .inner-page-intro, .poaw-testimonials
-  ) {
-    background-color: rgba(255, 249, 245, .77) !important;
-  }
-}
 
-
-/* Visible, unified satin transparency: replace opaque shorthand backgrounds. */
-body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
-  background: linear-gradient(rgba(255,249,245,.57),rgba(255,246,242,.64)), url("../images/peony-satin.jpg") center center / cover no-repeat !important;
-}
-body.poaw-satin :is(.product-card,.study-card,.learn-details-card,.resource-card,.shop-discover-card,.community-section__inner,.poaw-testimonials__card,.poaw-author__story,.contact-restored-card) {
-  background: rgba(255,250,246,.73) !important;
-  border: 1px solid rgba(201,168,106,.48) !important;
-}
-body.poaw-satin .shop-header {
-  background: rgba(255,249,245,.68) !important;
-}
-body.poaw-satin .shop-wrapper {
-  background: transparent !important;
-}
-body.poaw-satin :is(.product-card__content,.study-card__content) {
-  background: transparent !important;
-}
-@media(max-width:700px){
-  body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
-    background: linear-gradient(rgba(255,249,245,.64),rgba(255,246,242,.72)), url("../images/peony-satin.jpg") center center / cover no-repeat !important;
-  }
-}
-
-
-/* Satin glass storefront: visible floral art behind translucent product panels. */
+/* Single consolidated satin-glass treatment. */
 body.poaw-satin .shop-section {
  background: url("../images/peony-satin.jpg") center top / cover no-repeat !important;
 }
-body.poaw-satin .shop-section .shop-wrapper {
- background: transparent !important;
-}
-body.poaw-satin .shop-section .product-card,
-body.poaw-satin .shop-section .product-card__frame,
-body.poaw-satin .shop-section .product-card__image,
-body.poaw-satin .shop-section .product-card__content {
- background: rgba(255,250,247,.52) !important;
+body.poaw-satin .shop-section :is(.shop-wrapper,.product-card,.product-card__frame,.product-card__image,.product-card__content) {
+ background-color: rgba(255,249,245,.44) !important;
  background-image: none !important;
 }
 body.poaw-satin .shop-section .product-card__frame {
- border: 1px solid rgba(201,168,106,.6) !important;
- box-shadow: 0 16px 38px rgba(96,40,63,.12);
+ border: 1px solid rgba(201,168,106,.5) !important;
 }
 body.poaw-satin .shop-section .product-card__image img {
- display: block;
- max-width: 100%;
- height: auto;
- object-fit: contain;
+ display:block !important;
+ width:100% !important;
+ height:100% !important;
+ object-fit:contain !important;
+ opacity:1 !important;
+ visibility:visible !important;
 }
-/* Transparent pink satin shop design */
-body.poaw-satin .shop-section {
-  background:
-    url("../images/peony-satin.jpg")
-    center / cover no-repeat !important;
+body.poaw-satin :is(.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
+ background: linear-gradient(rgba(255,249,245,.45),rgba(255,249,245,.55)),url("../images/peony-satin.jpg") center / cover no-repeat !important;
 }
-
-body.poaw-satin .shop-section .product-card,
-body.poaw-satin .shop-section .product-card__frame,
-body.poaw-satin .shop-section .product-card__content {
-  background: rgba(255, 250, 247, 0.45) !important;
+body.poaw-satin :is(.study-card,.learn-details-card,.resource-card,.shop-discover-card,.community-section__inner,.poaw-testimonials__card,.poaw-author__story,.contact-restored-card) {
+ background:rgba(255,250,247,.65) !important;
 }
-
