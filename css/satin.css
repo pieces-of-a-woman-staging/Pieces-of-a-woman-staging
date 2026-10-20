@@ -1230,3 +1230,27 @@ body.poaw-satin :is(.product-card__content, .study-card__content) {
     background-color: rgba(255, 249, 245, .77) !important;
   }
 }
+
+
+/* Visible, unified satin transparency: replace opaque shorthand backgrounds. */
+body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
+  background: linear-gradient(rgba(255,249,245,.57),rgba(255,246,242,.64)), url("../images/peony-satin.jpg") center center / cover no-repeat !important;
+}
+body.poaw-satin :is(.product-card,.study-card,.learn-details-card,.resource-card,.shop-discover-card,.community-section__inner,.poaw-testimonials__card,.poaw-author__story,.contact-restored-card) {
+  background: rgba(255,250,246,.73) !important;
+  border: 1px solid rgba(201,168,106,.48) !important;
+}
+body.poaw-satin .shop-header {
+  background: rgba(255,249,245,.68) !important;
+}
+body.poaw-satin .shop-wrapper {
+  background: transparent !important;
+}
+body.poaw-satin :is(.product-card__content,.study-card__content) {
+  background: transparent !important;
+}
+@media(max-width:700px){
+  body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
+    background: linear-gradient(rgba(255,249,245,.64),rgba(255,246,242,.72)), url("../images/peony-satin.jpg") center center / cover no-repeat !important;
+  }
+}
