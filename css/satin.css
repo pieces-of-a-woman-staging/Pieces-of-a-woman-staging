@@ -1226,8 +1226,16 @@ body.poaw-satin .shop-section .product-card .product-card__image img {
   position: relative !important;
   z-index: 1 !important;
 }
-body.poaw-satin :is(.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
- background: linear-gradient(rgba(255,249,245,.45),rgba(255,249,245,.55)),url("../images/peony-satin.jpg") center / cover no-repeat !important;
+/* Consistent scrolling satin treatment: soft ivory edges mask section restarts. */
+body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resources-section,.poaw-author,.community-detail,.shop-discover,.contact-section-restored,.community-section,.ministry-signup,.inner-page-intro,.poaw-testimonials) {
+  background-image:
+    linear-gradient(to bottom, rgba(255,249,245,.92) 0%, rgba(255,249,245,0) 12%, rgba(255,249,245,0) 88%, rgba(255,249,245,.92) 100%),
+    linear-gradient(rgba(255,249,245,.50), rgba(255,249,245,.50)),
+    url("../images/peony-satin.jpg") !important;
+  background-position: center, center, center !important;
+  background-size: 100% 100%, 100% 100%, cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
 }
 body.poaw-satin :is(.study-card,.learn-details-card,.resource-card,.shop-discover-card,.community-section__inner,.poaw-testimonials__card,.poaw-author__story,.contact-restored-card) {
  background:rgba(255,250,247,.65) !important;
