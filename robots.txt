@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /tools/
+Disallow: /kit-landing-preview.html
+
+Sitemap: https://pieces-of-a-woman-staging.github.io/Pieces-of-a-woman-staging/sitemap.xml

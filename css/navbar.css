@@ -47,7 +47,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .menu-toggle{display:none;width:46px;height:46px;padding:10px;border:0;background:transparent}
 .menu-toggle__line{display:block;height:2px;background:var(--plum-dark);margin:6px 0;transition:.2s}
 
-.hero{position:relative;isolation:isolate;min-height:650px;overflow:hidden;background-image:linear-gradient(90deg,rgba(255,235,239,.70) 0%,rgba(255,232,238,.38) 45%,rgba(255,224,232,.16) 100%),url("../images/peony-satin.jpg");background-size:cover;background-position:center}
+.hero{position:relative;isolation:isolate;min-height:650px;overflow:hidden;background-image:linear-gradient(90deg,rgba(255,235,239,.70) 0%,rgba(255,232,238,.38) 45%,rgba(255,224,232,.16) 100%),url("../images/optimized/peony-satin-1536.webp");background-size:cover;background-position:center}
 .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(116,48,82,.04))}
 .hero-container{width:min(1180px,calc(100% - 56px));min-height:650px;margin:auto;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:30px;padding:72px 0}
 .hero-content{position:relative;z-index:4;max-width:650px}
@@ -78,7 +78,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .hero-sparkle{position:absolute;color:rgba(201,168,106,.85);font-size:18px}.hero-sparkle--one{top:12%;left:8%}.hero-sparkle--two{right:9%;top:42%}.hero-sparkle--three{bottom:12%;left:31%}
 .hero-ripple{display:none}
 
-.shop-section{position:relative;isolation:isolate;padding:64px 0 78px;background-image:linear-gradient(rgba(255,249,245,.70),rgba(255,249,245,.78)),url("../images/peony-satin.jpg");background-size:cover;background-position:center;background-attachment:fixed}
+.shop-section{position:relative;isolation:isolate;padding:64px 0 78px;background-image:linear-gradient(rgba(255,249,245,.70),rgba(255,249,245,.78)),url("../images/optimized/peony-satin-1536.webp");background-size:cover;background-position:center;background-attachment:fixed}
 .shop-wrapper{width:min(1180px,calc(100% - 40px));margin:auto}
 .shop-header{text-align:center;max-width:780px;margin:0 auto 42px}
 .section-eyebrow--centered{justify-content:center}
@@ -101,7 +101,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .product-badge{position:absolute;z-index:2;top:14px;left:14px;padding:7px 10px;background:var(--gold-deep);color:#fff;border-radius:999px;font-size:8px;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
 .shop-ripple,.shop-florals{display:none}
 
-.poaw-author{position:relative;padding:76px 0;background-image:linear-gradient(90deg,rgba(255,249,245,.92),rgba(255,249,245,.76)),url("../images/peony-satin.jpg");background-size:cover;background-position:center}
+.poaw-author{position:relative;padding:76px 0;background-image:linear-gradient(90deg,rgba(255,249,245,.92),rgba(255,249,245,.76)),url("../images/optimized/peony-satin-1536.webp");background-size:cover;background-position:center}
 .poaw-author__container{width:min(1080px,calc(100% - 48px));margin:auto}
 .poaw-author__header{text-align:center;margin-bottom:38px}
 .poaw-author__eyebrow{margin:0 0 8px;font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold-deep)}
@@ -125,7 +125,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .poaw-author__scripture{font-family:var(--heading);font-size:17px;font-style:italic;line-height:1.5;color:#5a4051}
 .poaw-author__lineage{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
 
-.site-footer{position:relative;min-height:300px;display:grid;place-items:center;background-image:linear-gradient(rgba(86,31,68,.12),rgba(86,31,68,.16)),url("../images/peony-satin.jpg");background-size:cover;background-position:center bottom;color:var(--plum-dark)}
+.site-footer{position:relative;min-height:300px;display:grid;place-items:center;background-image:linear-gradient(rgba(86,31,68,.12),rgba(86,31,68,.16)),url("../images/optimized/peony-satin-1536.webp");background-size:cover;background-position:center bottom;color:var(--plum-dark)}
 .footer-overlay{width:100%;padding:62px 24px;text-align:center;background:rgba(255,235,239,.35)}
 .footer-emblem{width:55px;height:55px;margin:0 auto 18px}.footer-emblem svg{width:100%;height:100%}
 .footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:24px}
@@ -456,7 +456,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   min-height:420px !important;
   background:
     linear-gradient(rgba(249,228,225,.14),rgba(249,228,225,.14)),
-    url("../images/peony-satin.jpg") center/cover no-repeat !important;
+    url("../images/optimized/peony-satin-1536.webp") center/cover no-repeat !important;
 }
 .hero::before{display:none !important;}
 .hero-container{
@@ -732,7 +732,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .page-reference-design .navbar-button{display:none!important}
 .page-reference-design .hero{
   min-height:435px!important;height:auto!important;overflow:hidden!important;
-  background-image:linear-gradient(90deg,rgba(255,245,245,.18),rgba(255,236,240,.03)),url("../images/pink-water-hero-reference.jpg")!important;
+  background-image:linear-gradient(90deg,rgba(255,245,245,.18),rgba(255,236,240,.03)),url("../images/optimized/pink-water-1328.webp")!important;
   background-color:#f9d6de!important;background-size:cover!important;
   background-position:center 58%!important;background-repeat:no-repeat!important;
 }
@@ -801,7 +801,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   min-height:144px!important;text-align:center!important;
   border:1px solid rgba(201,168,106,.75)!important;
   background:linear-gradient(100deg,rgba(255,228,232,.72),rgba(255,242,242,.75)),
-             url("../images/pink-water-hero-reference.jpg") center 23%/cover no-repeat!important;
+             url("../images/optimized/pink-water-1328.webp") center 23%/cover no-repeat!important;
   overflow:hidden!important;
 }
 .page-reference-design .shop-header::after{
@@ -883,7 +883,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   .page-reference-design .brand-subtitle{font-size:7px!important}
   .page-reference-design .hero{
     min-height:440px!important;background-position:48% 52%!important;
-    background-image:linear-gradient(90deg,rgba(255,242,245,.42),rgba(255,236,240,.18)),url("../images/pink-water-hero-reference.jpg")!important;
+    background-image:linear-gradient(90deg,rgba(255,242,245,.42),rgba(255,236,240,.18)),url("../images/optimized/pink-water-1328.webp")!important;
   }
   .page-reference-design .hero-container{
     min-height:440px!important;width:calc(100% - 28px)!important;
@@ -944,7 +944,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   width:100%!important;
   height:100%!important;
   pointer-events:none!important;
-  background-image:url("../images/pink-water-hero-reference.jpg")!important;
+  background-image:url("../images/optimized/pink-water-1328.webp")!important;
   background-size:cover!important;
   background-repeat:no-repeat!important;
   background-position:center 58%!important;
@@ -965,7 +965,7 @@ button,a{-webkit-tap-highlight-color:transparent}
   inset:0!important;
   z-index:0!important;
   pointer-events:none!important;
-  background-image:linear-gradient(90deg,rgba(255,229,236,.13),rgba(255,225,235,.1)),url("../images/pink-water-hero-reference.jpg")!important;
+  background-image:linear-gradient(90deg,rgba(255,229,236,.13),rgba(255,225,235,.1)),url("../images/optimized/pink-water-1328.webp")!important;
   background-size:cover!important;
   background-position:center 23%!important;
   filter:saturate(1.6) contrast(1.12) brightness(1.035)!important;

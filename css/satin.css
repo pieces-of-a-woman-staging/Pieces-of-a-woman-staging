@@ -15,7 +15,7 @@ body.poaw-satin {
   --ink: #47353c;
   --font-heading: "Cormorant Garamond", Georgia, serif;
   --font-body: "Montserrat", Arial, sans-serif;
-  --satin-art: url("../images/peony-satin.jpg");
+  --satin-art: url("../images/optimized/peony-satin-1536.webp");
   --content-width: 1240px;
   --transition: 220ms ease;
   margin: 0;
@@ -339,7 +339,7 @@ body.poaw-satin .gold-divider span {
 body.poaw-satin .shop-section {
   position: relative !important;
   padding: 76px 0 90px !important;
-  background: url("../images/peony-satin.jpg") center top / cover no-repeat !important;
+  background: var(--satin-art) center top / cover no-repeat !important;
   background-attachment: scroll !important;
 }
 
@@ -1237,7 +1237,7 @@ body.poaw-satin :is(.shop-section,.study-section,.learn-details-section,.resourc
   background-image:
     linear-gradient(to bottom, rgba(255,249,245,.92) 0%, rgba(255,249,245,0) 12%, rgba(255,249,245,0) 88%, rgba(255,249,245,.92) 100%),
     linear-gradient(rgba(255,249,245,.50), rgba(255,249,245,.50)),
-    url("../images/peony-satin.jpg") !important;
+    var(--satin-art) !important;
   background-position: center, center, center !important;
   background-size: 100% 100%, 100% 100%, cover !important;
   background-repeat: no-repeat !important;
@@ -1249,7 +1249,7 @@ body.poaw-satin.page-reference-design .shop-section {
   background-image:
     linear-gradient(to bottom, rgba(255,249,245,.90), rgba(255,249,245,0) 12%, rgba(255,249,245,0) 88%, rgba(255,249,245,.90)),
     linear-gradient(rgba(255,249,245,.36), rgba(255,249,245,.36)),
-    url("../images/peony-satin.jpg") !important;
+    var(--satin-art) !important;
   background-position: center, center, center !important;
   background-size: 100% 100%, 100% 100%, cover !important;
   background-repeat: no-repeat !important;
@@ -1262,7 +1262,7 @@ body.poaw-satin .site-footer {
   background-image:
     linear-gradient(to bottom, rgba(255,249,245,.92), rgba(255,249,245,0) 20%, rgba(255,249,245,0) 88%, rgba(255,249,245,.92)),
     linear-gradient(rgba(255,249,245,.50), rgba(255,249,245,.50)),
-    url("../images/peony-satin.jpg") !important;
+    var(--satin-art) !important;
   background-position: center, center, center !important;
   background-size: 100% 100%, 100% 100%, cover !important;
   background-repeat: no-repeat !important;
@@ -1445,4 +1445,8 @@ body.poaw-satin :is(.study-card,.learn-details-card,.resource-card,.shop-discove
     padding: 5px 2px;
     overflow-wrap: anywhere;
   }
+}
+
+@media (max-width: 600px) {
+  body.poaw-satin { --satin-art: url("../images/optimized/peony-satin-800.webp"); }
 }

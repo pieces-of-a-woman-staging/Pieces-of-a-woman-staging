@@ -1,0 +1,11 @@
+{
+  "name": "pieces-of-a-woman-website",
+  "private": true,
+  "scripts": {
+    "optimize:images": "node tools/optimize-images.cjs",
+    "check:styles": "python3 tools/sync_stylesheets.py --check"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  }
+}
