@@ -1,0 +1,209 @@
+/* A dedicated space honoring the notebooks and teaching behind Genesis Foundations. */
+body.poaw-satin .poaw-dedication {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  padding: clamp(64px, 8vw, 106px) 24px;
+  border: 0;
+  background:
+    linear-gradient(to bottom, rgba(255,249,245,.96), rgba(255,249,245,0) 18%, rgba(255,249,245,0) 82%, rgba(255,249,245,.96)),
+    linear-gradient(rgba(255,249,245,.78), rgba(249,228,225,.76)),
+    url("../images/optimized/peony-satin-1536.webp") center / cover no-repeat;
+  color: #563b4d;
+  scroll-margin-top: 100px;
+}
+.poaw-dedication,
+.poaw-dedication * {
+  box-sizing: border-box;
+}
+.poaw-dedication__inner {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+.poaw-dedication__header {
+  max-width: 860px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.poaw-dedication .poaw-dedication__eyebrow {
+  margin: 0 0 13px;
+  color: #89632f;
+  font: 600 10px/1.6 "Montserrat", Arial, sans-serif;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+.poaw-dedication h2 {
+  margin: 0;
+  color: #622b45;
+  font: 500 clamp(39px, 5.2vw, 61px)/1.08 "Cormorant Garamond", Georgia, serif;
+  text-wrap: balance;
+}
+.poaw-dedication h2 em {
+  display: block;
+  color: #94516b;
+  font-weight: 500;
+}
+.poaw-dedication__rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  width: min(245px, 78%);
+  margin: 18px auto;
+  color: #a47a3d;
+}
+.poaw-dedication__rule span {
+  flex: 1;
+  height: 1px;
+  background: #c9a86a;
+}
+.poaw-dedication__rule svg {
+  flex: 0 0 64px;
+}
+.poaw-dedication .poaw-dedication__introduction {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #654653;
+  font: 400 14px/1.8 "Montserrat", Arial, sans-serif;
+  text-wrap: balance;
+}
+.poaw-dedication__layout {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(30px, 5.5vw, 76px);
+}
+.poaw-dedication__artwork {
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  margin: 0 auto;
+}
+.poaw-dedication__artwork img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 767 / 1182;
+  object-fit: contain;
+  border: 1px solid #b99154;
+  border-radius: 5px;
+  box-shadow: 0 18px 48px rgba(94,45,63,.16);
+}
+.poaw-dedication__artwork figcaption {
+  margin-top: 14px;
+  color: #72515f;
+  font: 400 10px/1.7 "Montserrat", Arial, sans-serif;
+  text-align: center;
+}
+.poaw-dedication__story {
+  min-width: 0;
+}
+.poaw-dedication h3 {
+  margin: 0 0 24px;
+  color: #622b45;
+  font: 500 clamp(31px, 3.4vw, 42px)/1.12 "Cormorant Garamond", Georgia, serif;
+  text-wrap: balance;
+}
+.poaw-dedication__story > p:not(.poaw-dedication__eyebrow) {
+  margin: 0 0 19px;
+  font: 400 14px/1.9 "Montserrat", Arial, sans-serif;
+  overflow-wrap: anywhere;
+}
+.poaw-dedication__teaching {
+  margin: 30px 0 22px;
+  padding: 24px 26px;
+  border-left: 2px solid #b78b4b;
+  background: rgba(255,253,249,.78);
+}
+.poaw-dedication__teaching figcaption {
+  margin: 0 0 12px;
+  color: #89632f;
+  font: 600 9px/1.6 "Montserrat", Arial, sans-serif;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.poaw-dedication__teaching blockquote {
+  margin: 0;
+}
+.poaw-dedication__teaching blockquote p {
+  margin: 0 0 14px;
+  color: #622b45;
+  font: italic 500 clamp(25px, 2.8vw, 32px)/1.25 "Cormorant Garamond", Georgia, serif;
+}
+.poaw-dedication__teaching cite {
+  color: #72515f;
+  font: 500 11px/1.6 "Montserrat", Arial, sans-serif;
+}
+.poaw-dedication__reflection {
+  border-top: 1px solid rgba(164,122,61,.42);
+  border-bottom: 1px solid rgba(164,122,61,.42);
+}
+.poaw-dedication__reflection summary {
+  min-height: 48px;
+  padding: 16px 3px;
+  color: #622b45;
+  font: 600 12px/1.65 "Montserrat", Arial, sans-serif;
+  cursor: pointer;
+}
+.poaw-dedication__reflection summary:focus-visible {
+  outline: 2px solid #622b45;
+  outline-offset: 4px;
+}
+.poaw-dedication__reflection > div {
+  padding: 3px 3px 20px;
+}
+.poaw-dedication__reflection blockquote {
+  margin: 14px 0;
+}
+.poaw-dedication__reflection blockquote p {
+  margin: 0;
+  font: 400 14px/1.85 "Montserrat", Arial, sans-serif;
+}
+.poaw-dedication .poaw-dedication__reflection-label,
+.poaw-dedication .poaw-dedication__reflection-attribution {
+  margin: 0;
+  color: #72515f;
+  font: 500 11px/1.7 "Montserrat", Arial, sans-serif;
+}
+@media (max-width: 700px) {
+  body.poaw-satin .poaw-dedication {
+    padding: 56px 22px 64px;
+    scroll-margin-top: 80px;
+  }
+  .poaw-dedication__header {
+    margin-bottom: 32px;
+  }
+  .poaw-dedication h2 {
+    font-size: clamp(36px, 10vw, 48px);
+  }
+  .poaw-dedication .poaw-dedication__introduction {
+    font-size: 13px;
+  }
+  .poaw-dedication__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+  .poaw-dedication__artwork {
+    max-width: 380px;
+  }
+  .poaw-dedication__story {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .poaw-dedication h3 {
+    font-size: 34px;
+  }
+  .poaw-dedication__teaching {
+    padding: 22px;
+  }
+}
+@media (max-width: 600px) {
+  body.poaw-satin .poaw-dedication {
+    background-image:
+      linear-gradient(to bottom, rgba(255,249,245,.96), rgba(255,249,245,0) 18%, rgba(255,249,245,0) 82%, rgba(255,249,245,.96)),
+      linear-gradient(rgba(255,249,245,.78), rgba(249,228,225,.76)),
+      url("../images/optimized/peony-satin-800.webp");
+  }
+}
+

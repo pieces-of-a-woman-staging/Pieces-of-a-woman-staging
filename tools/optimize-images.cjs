@@ -12,7 +12,7 @@ const assets = [
   ['Bundle deal.PNG', 'bundle', [480, 800, 1122]],
   ['images/Bookmark orginal.jpg', 'bookmarks', [480, 800, 1179]],
   ['images/author-portrait-2026.jpg', 'author', [480, 800, 1179]],
-  ['images/IMG_4199.jpeg', 'tribute', [480, 800, 1179]],
+  ['images/vonita-genesis-dedication.jpg', 'vonita-dedication', [480, 767]],
   ['images/peony-satin.jpg', 'peony-satin', [800, 1536]],
   ['images/pink-water-hero-reference.jpg', 'pink-water', [800, 1328]],
   ['images/soft-pink-ripple-background.jpg', 'soft-ripple', [800, 1536]],
