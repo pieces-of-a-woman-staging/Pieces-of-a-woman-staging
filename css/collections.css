@@ -135,6 +135,21 @@ body.poaw-satin .collections-tools .collections-panel > img {
   object-fit: contain;
   margin: 0 0 24px;
 }
+body.poaw-satin .collections-merch-prices {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+body.poaw-satin .collections-merch-prices .collections-panel {
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body.poaw-satin .collections-merch-prices .product-card__price {
+  margin: 14px 0 24px;
+  color: var(--plum-dark);
+}
 body.poaw-satin .collections-ebook { max-width: 760px; margin: 0 auto; text-align: center; }
 body.poaw-satin .collections-ebook .product-card__price { color: var(--plum-dark); }
 body.poaw-satin .collections-dialog {
@@ -186,12 +201,14 @@ body.poaw-satin .collections-dialog button:focus-visible {
   body.poaw-satin .collections-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body.poaw-satin .collections-feature { grid-template-columns: 1fr; }
   body.poaw-satin .collections-feature img { max-height: 430px; }
+  body.poaw-satin .collections-merch-prices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
   body.poaw-satin .collections-section { width: calc(100% - 32px); padding: 36px 0; }
   body.poaw-satin .collections-topic-grid,
   body.poaw-satin .collections-gallery,
-  body.poaw-satin .collections-tools { grid-template-columns: 1fr; gap: 22px; }
+  body.poaw-satin .collections-tools,
+  body.poaw-satin .collections-merch-prices { grid-template-columns: 1fr; gap: 22px; }
   body.poaw-satin .collections-gallery img { height: auto; max-height: 520px; }
   body.poaw-satin .collections-panel { padding: 22px; }
   body.poaw-satin .collections-feature { padding: 22px; }
