@@ -105,7 +105,7 @@ body.poaw-layout-editorial .editorial-hero__visual {
   border-radius: 4px;
   box-shadow: 0 22px 52px #622b4517;
 }
-body.poaw-layout-editorial .community-page-hero__visual { aspect-ratio: 1.05; }
+body.poaw-layout-editorial .community-page-hero__visual { aspect-ratio: 1; }
 body.poaw-layout-editorial .community-page-hero__visual picture {
   display: block;
   width: 100%;
@@ -253,3 +253,12 @@ body.poaw-layout-editorial .editorial-page summary:focus-visible { outline: 3px 
   body.poaw-layout-editorial .editorial-section h2 { font-size: 38px; }
 }
 @media (prefers-reduced-motion: reduce) { html:has(body.poaw-layout-editorial) { scroll-behavior: auto; } }
+
+/* A stronger visual rhythm for the community journey. */
+body.poaw-layout-editorial.poaw-satin main > .community-page-hero { background: linear-gradient(115deg, #fff2ed, #eab3c7) !important; }
+body.poaw-layout-editorial .community-page-hero__visual img { object-fit: contain; object-position: center; }
+body.poaw-layout-editorial.poaw-satin main > .editorial-gatherings { background: #622b45 !important; }
+body.poaw-layout-editorial .editorial-gatherings .editorial-section__heading h2 { color: #fff7ed; }
+body.poaw-layout-editorial .editorial-gatherings .editorial-section__heading h2 em { color: #f2b5cb; }
+body.poaw-layout-editorial .editorial-gatherings .editorial-section__heading > p { color: #f2d9df; }
+body.poaw-layout-editorial.poaw-satin main > .editorial-invitation { background: #e9b2c6 !important; }
