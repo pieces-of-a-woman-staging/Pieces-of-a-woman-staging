@@ -105,7 +105,7 @@ body.poaw-layout-editorial .editorial-hero__visual {
   border-radius: 4px;
   box-shadow: 0 22px 52px #622b4517;
 }
-body.poaw-layout-editorial .community-page-hero__visual { aspect-ratio: 1; }
+body.poaw-layout-editorial .community-page-hero__visual { aspect-ratio: 1.1; }
 body.poaw-layout-editorial .community-page-hero__visual picture {
   display: block;
   width: 100%;
