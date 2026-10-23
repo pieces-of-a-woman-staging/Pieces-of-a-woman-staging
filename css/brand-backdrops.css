@@ -1,0 +1,180 @@
+/* Logo-inspired artwork. All rules stop at main; Author and Legacy remain untouched. */
+body.poaw-page-index .brand-backdrops {
+  --puzzle-scene: url("../images/optimized/puzzle-enamel-backdrop-1536.webp");
+  --cross-scene: url("../images/optimized/pink-cross-backdrop-1536.webp");
+  background: #4c073f var(--puzzle-scene) center top / 100% auto repeat-y;
+}
+body.poaw-page-index .brand-backdrops .home-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 730px;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 64px);
+  padding: 60px max(28px, calc((100vw - 1280px) / 2));
+  background: #4c073f;
+}
+body.poaw-page-index .brand-puzzle-scene::before {
+  content: "";
+  position: absolute;
+  inset: -3%;
+  z-index: -2;
+  background: var(--puzzle-scene) center / cover no-repeat;
+  pointer-events: none;
+}
+body.poaw-page-index .brand-puzzle-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #34042912 25%, #36092fd9 65%, #36092fe8);
+}
+body.poaw-page-index .brand-backdrops .home-hero__copy { grid-column: 2; grid-row: 1; }
+body.poaw-page-index .brand-backdrops .home-brand-art { grid-column: 1; grid-row: 1; padding: 0; }
+body.poaw-page-index .brand-backdrops .home-brand-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  box-shadow: none;
+  transform: none;
+  filter: drop-shadow(0 8px 20px #260323aa);
+}
+body.poaw-page-index .brand-backdrops .home-hero h1 { font-size: clamp(54px, 6vw, 88px); }
+body.poaw-page-index .brand-backdrops .home-hero h1 em { color: #ffb9dd; }
+body.poaw-page-index .brand-backdrops .home-eyebrow { color: #f3d2a5; }
+body.poaw-page-index .brand-backdrops .home-button {
+  background: linear-gradient(120deg, #ffcee6, #e585ba);
+  color: #450b3d;
+  border: 1px solid #efd09b;
+  box-shadow: inset 0 1px #fff5, 0 5px 20px #28032233;
+}
+body.poaw-page-index .brand-motion-toggle {
+  display: block;
+  margin-top: 24px;
+  padding: 7px 0;
+  color: #fce6f2;
+  font: 500 10px/1.6 var(--font-body);
+  letter-spacing: .04em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  min-height: 44px;
+}
+body.poaw-page-index .brand-motion-toggle[hidden] { display: none; }
+body.poaw-page-index .brand-backdrops .home-scroll-cue { display: flex; width: fit-content; margin-top: 6px; }
+/* Art continues between sections rather than ending at the opening screen. */
+body.poaw-page-index.poaw-satin .brand-backdrops #shop.home-shop {
+  background: linear-gradient(105deg, #ffe7f2e8, #f8d6eae8), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index .brand-backdrops .home-scripture {
+  background: linear-gradient(100deg, #f8b6dbe8, #fbd8e8f5);
+  border-block: 1px solid #dfb981;
+}
+body.poaw-page-index .brand-backdrops .home-scripture blockquote { color: #4f1048; }
+body.poaw-page-index.poaw-satin .brand-backdrops #genesis-2.home-part-two {
+  background: linear-gradient(90deg, #3a073dd1, #3a073df5), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #testimonials.home-testimonials {
+  background: linear-gradient(90deg, #4d0c49f5, #4d0c49cf), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index .brand-backdrops .home-community {
+  background: linear-gradient(120deg, #4f0c46eb, #4f0c46f5), var(--puzzle-scene) center / cover no-repeat;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #stay-connected.home-signup,
+body.poaw-page-index.poaw-satin .brand-backdrops #contact.home-contact {
+  background: linear-gradient(105deg, #f7bddce8, #ffe3f1f2), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #resources.home-resources {
+  background: linear-gradient(105deg, #ffedf5f2, #fce1eff5), var(--puzzle-scene) center / cover no-repeat !important;
+}
+/* Full-height pink cross behind the existing study content. */
+body.poaw-page-index.poaw-satin .brand-backdrops #study.brand-cross-scene {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 850px;
+  padding-top: 84px !important;
+  padding-bottom: 84px !important;
+  background: #3c0a3a !important;
+}
+body.poaw-page-index .brand-cross-art {
+  position: absolute;
+  inset: -2%;
+  z-index: -2;
+  pointer-events: none;
+  background: var(--cross-scene) left center / cover no-repeat;
+}
+body.poaw-page-index .brand-cross-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 15%, #31072b66 40%, #31072bea 62%);
+}
+body.poaw-page-index .brand-backdrops .home-study .study-inner {
+  display: block;
+  width: 48% !important;
+  margin: 0 0 0 auto;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #study .study-heading { color: #fff1f7 !important; }
+body.poaw-page-index .brand-backdrops #study .study-heading em { color: #ffb4dc !important; }
+body.poaw-page-index .brand-backdrops #study .section-eyebrow,
+body.poaw-page-index .brand-backdrops #study .home-study-number { color: #f3d2a5 !important; }
+body.poaw-page-index .brand-backdrops #study .study-intro { color: #fce2f0 !important; }
+body.poaw-page-index .brand-backdrops .home-study-days { margin-top: 32px; }
+body.poaw-page-index .brand-backdrops #study .home-study-day { border-color: #d7afd177; }
+body.poaw-page-index .brand-backdrops #study .home-study-day h3,
+body.poaw-page-index .brand-backdrops #study .home-study-day summary::after { color: #fff1f7; }
+body.poaw-page-index .brand-backdrops #study .home-study-day__body { color: #fce2f0; }
+body.poaw-page-index .brand-backdrops #study .study-key { color: #ffc4e5 !important; }
+body.poaw-page-index .brand-motion-toggle--study { position: absolute; left: 32px; bottom: 20px; margin: 0; }
+/* Animation runs only on screen, with an explicit pause control and reduced-motion support. */
+body.poaw-page-index .brand-puzzle-scene::before,
+body.poaw-page-index .brand-cross-art { animation: poaw-background-breathe 14s ease-in-out infinite alternate paused; }
+body.poaw-page-index .brand-motion-enabled .brand-scene-visible.brand-puzzle-scene::before,
+body.poaw-page-index .brand-motion-enabled .brand-scene-visible .brand-cross-art { animation-play-state: running; }
+@keyframes poaw-background-breathe {
+  from { transform: scale(1) translateY(0); }
+  to { transform: scale(1.025) translateY(-.6%); }
+}
+@media (max-width: 1000px) and (min-width: 701px) {
+  body.poaw-page-index .brand-backdrops .home-hero { min-height: 650px; }
+  body.poaw-page-index .brand-backdrops .home-hero h1 { font-size: 58px; }
+  body.poaw-page-index .brand-backdrops .home-study .study-inner { width: 55% !important; }
+}
+@media (max-width: 700px) {
+  body.poaw-page-index .brand-backdrops {
+    --puzzle-scene: url("../images/optimized/puzzle-enamel-backdrop-768.webp");
+    --cross-scene: url("../images/optimized/pink-cross-backdrop-768.webp");
+  }
+  body.poaw-page-index .brand-backdrops .home-hero {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 28px 22px 42px;
+    gap: 20px;
+  }
+  body.poaw-page-index .brand-backdrops .home-brand-art { grid-column: 1; grid-row: 1; width: min(100%, 420px); }
+  body.poaw-page-index .brand-backdrops .home-hero__copy { grid-column: 1; grid-row: 2; }
+  body.poaw-page-index .brand-puzzle-scene::before { background-position: 28% top; }
+  body.poaw-page-index .brand-puzzle-scene::after { background: linear-gradient(180deg, #37083140, #370831ed 48%, #370831f5); }
+  body.poaw-page-index .brand-backdrops .home-hero h1 { font-size: clamp(52px, 13vw, 76px); }
+  body.poaw-page-index .brand-backdrops .home-hero .home-eyebrow { font-size: 9px; margin-bottom: 18px; }
+  body.poaw-page-index.poaw-satin .brand-backdrops #study.brand-cross-scene {
+    padding-top: 390px !important;
+    padding-bottom: 80px !important;
+    min-height: 0;
+  }
+  body.poaw-page-index .brand-cross-art { inset: 0; background-size: auto 460px; background-position: 22% top; background-color: #3c0a3a; }
+  body.poaw-page-index .brand-cross-scene::after { background: linear-gradient(180deg, transparent 200px, #3c0a3a 450px); }
+  body.poaw-page-index .brand-backdrops .home-study .study-inner { width: 100% !important; }
+  body.poaw-page-index .brand-motion-toggle--study { left: 20px; bottom: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.poaw-page-index .brand-puzzle-scene::before,
+  body.poaw-page-index .brand-cross-art { animation: none !important; }
+}
