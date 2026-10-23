@@ -1,0 +1,116 @@
+/* Approved puzzle artwork, with existing content and gathering links retained. */
+body.poaw-satin .community-section--heart {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(64px, 7vw, 104px) 28px !important;
+  background-color: var(--blush);
+}
+
+body.poaw-satin .community-heart-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 56px);
+  width: min(100%, var(--content-width));
+  margin: 0 auto;
+}
+
+body.poaw-satin .community-heart-art {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body.poaw-satin .community-heart-art::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 9% -3% 7%;
+  background: radial-gradient(ellipse, rgba(255, 253, 249, .94), rgba(244, 210, 220, .45) 58%, transparent 73%);
+  pointer-events: none;
+}
+
+body.poaw-satin .community-heart-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 22px rgba(98, 43, 69, .12));
+}
+
+body.poaw-satin #community.community-section--heart .community-section__inner {
+  width: 100% !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: clamp(24px, 3vw, 40px);
+  border: 1px solid rgba(199, 170, 124, .6);
+  border-radius: 4px;
+  background: rgba(255, 253, 249, .94) !important;
+  box-shadow: 0 22px 60px rgba(98, 43, 69, .08);
+  text-align: center;
+}
+
+body.poaw-satin .community-section--heart .community-heading {
+  margin: 14px 0;
+  font-size: clamp(36px, 4vw, 56px) !important;
+  line-height: 1.08;
+}
+
+body.poaw-satin .community-section--heart .gathering-grid {
+  gap: 14px;
+}
+
+body.poaw-satin .community-section--heart .gathering-card {
+  padding: 24px 16px;
+  background: linear-gradient(150deg, var(--ivory), rgba(248, 231, 228, .55));
+  border-color: rgba(199, 170, 124, .5);
+  border-radius: 3px;
+}
+
+body.poaw-satin .community-section--heart .gathering-card h3 {
+  font-size: clamp(27px, 2.5vw, 33px);
+}
+
+body.poaw-satin .community-section--heart .gathering-card__schedule {
+  font-size: 12px;
+}
+
+@media (max-width: 960px) {
+  body.poaw-satin .community-heart-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    max-width: 720px;
+  }
+
+  body.poaw-satin .community-heart-art {
+    width: min(100%, 520px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  body.poaw-satin .community-section--heart {
+    padding: 48px 16px 56px !important;
+  }
+
+  body.poaw-satin .community-heart-layout {
+    gap: 24px;
+  }
+
+  body.poaw-satin .community-heart-art {
+    width: min(100%, 430px);
+  }
+
+  body.poaw-satin #community.community-section--heart .community-section__inner {
+    padding: 28px 18px;
+  }
+
+  body.poaw-satin .community-section--heart .section-eyebrow {
+    font-size: 9px;
+    letter-spacing: .12em;
+  }
+}
