@@ -34,9 +34,10 @@
   <link rel="stylesheet" href="css/collections.css?v=20261021">
   <link rel="stylesheet" href="css/community-heart.css?v=20261023">
   <link rel="stylesheet" href="css/featured-artwork.css?v=20261023-1">
+  <link rel="stylesheet" href="css/page-layout.css?v=20261023-1">
 </head>
 
-<body class="poaw-satin poaw-page-community">
+<body class="poaw-layout-editorial poaw-satin poaw-page-community">
 
   <header class="site-header" id="site-header">
 
@@ -112,11 +113,7 @@
           <ul class="navigation-links">
 
             <li>
-              <a
-                class="navigation-link is-active"
-                href="index.html#home"
-                aria-current="page"
-              >
+              <a class="navigation-link" href="index.html#home">
                 HOME
               </a>
             </li>
@@ -146,7 +143,7 @@
             </li>
 
             <li>
-              <a class="navigation-link" href="community.html">
+              <a class="navigation-link is-active" href="community.html" aria-current="page">
                 COMMUNITY
               </a>
             </li>
@@ -198,57 +195,45 @@
   </header>
 
 
-  <main class="poaw-inner-page">
-    <section class="community-banner" aria-labelledby="community-page-heading">
-      <div class="artwork-sr-only"><p>PIECES OF A WOMAN BIBLE STUDIES</p><h1 id="community-page-heading">Our Community</h1><p>Faith-filled conversations. Real growth. A sisterhood on purpose.</p></div>
+  <main class="poaw-inner-page editorial-page">
+  <section class="editorial-hero community-page-hero" aria-labelledby="community-page-heading">
+    <div class="editorial-hero__copy">
+      <p class="editorial-eyebrow">PIECES OF A WOMAN BIBLE STUDIES</p>
+      <h1 id="community-page-heading">Our <em>Community</em></h1>
+      <p class="editorial-lead">Faith-filled conversations. Real growth.<br>A sisterhood on purpose.</p>
+      <p class="editorial-description">Join us for Bible study on Zoom and Wednesday prayer on Facebook Messenger.</p>
+      <div class="editorial-actions"><a class="editorial-button" href="#community">Study &amp; pray with us <span aria-hidden="true">→</span></a><a class="editorial-text-link" href="what-youll-learn.html">Explore Bible studies <span aria-hidden="true">↗</span></a></div>
+      <div class="editorial-hero__note"><span aria-hidden="true">✦</span> Bible study · Tuesdays &amp; Fridays · 5 p.m.</div>
+    </div>
+    <div class="editorial-hero__visual community-page-hero__visual">
       <picture>
-        <source media="(max-width: 700px)" srcset="images/optimized/community-banner-mobile-640.webp 640w, images/optimized/community-banner-mobile-1169.webp 1169w" sizes="100vw" width="1169" height="1874">
+        <source media="(max-width: 700px)" srcset="images/optimized/community-banner-mobile-640.webp 640w, images/optimized/community-banner-mobile-1169.webp 1169w" sizes="calc(100vw - 40px)" width="1169" height="1874">
         <img src="images/optimized/community-banner-desktop-1075.webp" width="1075" height="508" alt="Three women in pink holding the Pieces Of A Woman puzzle heart." fetchpriority="high" decoding="async">
       </picture>
-    </section>
-    <section class="community-section community-section--heart" id="community" aria-labelledby="community-heading">
-      <div class="community-heart-layout">
-        <figure class="community-heart-art" aria-hidden="true">
-          <img src="images/optimized/community-puzzle-heart-1254.webp"
-               srcset="images/optimized/community-puzzle-heart-640.webp 640w, images/optimized/community-puzzle-heart-1254.webp 1254w"
-               sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 960px) 520px, 560px"
-               width="1254" height="1254" alt="" loading="lazy" decoding="async">
-        </figure>
-      <div class="community-section__inner">
-        <p class="section-eyebrow section-eyebrow--centered"><span aria-hidden="true"></span>PIECES OF A WOMAN COMMUNITY<span aria-hidden="true"></span></p>
-        <h2 class="community-heading" id="community-heading">Study &amp; Pray With Us</h2>
-        <div class="gold-divider gold-divider--centered" aria-hidden="true"><span></span><b>✦</b><span></span></div>
-        <p class="community-subheading">Faith-filled conversations. Real growth. A sisterhood on purpose.</p>
-        <div class="gathering-grid">
-          <article class="gathering-card" aria-labelledby="bible-study-heading">
+    </div>
+  </section>
+  <section class="editorial-section editorial-gatherings" id="community" aria-labelledby="community-heading">
+    <div class="editorial-section__heading"><p class="editorial-eyebrow">GATHER WITH US</p><h2 id="community-heading">Study &amp; <em>Pray With Us</em></h2><p>Faith-filled conversations. Real growth. A sisterhood on purpose.</p></div>
+    <div class="gathering-grid"><article class="gathering-card" aria-labelledby="bible-study-heading">
             <p class="gathering-card__label">GROW IN THE WORD</p>
             <h3 id="bible-study-heading">Bible Study</h3>
             <p class="gathering-card__schedule">Tuesdays &amp; Fridays · 5 p.m.</p>
             <p>Join Pieces Of A Woman Bible Studies on Zoom.</p>
             <a class="primary-button gathering-card__button" href="https://us06web.zoom.us/j/81086726753?pwd=UxSKlJ5h9wUK69qrLJQobVbQ1N4QJX.1" target="_blank" rel="noopener noreferrer">Join Bible Study <span class="gathering-sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
           </article>
-          <article class="gathering-card" aria-labelledby="wednesday-prayer-heading">
+<article class="gathering-card" aria-labelledby="wednesday-prayer-heading">
             <p class="gathering-card__label">COME TOGETHER IN PRAYER</p>
             <h3 id="wednesday-prayer-heading">Wednesday Prayer</h3>
             <p class="gathering-card__schedule">Wednesdays · 5 p.m.</p>
             <p>Join us for prayer on Facebook Messenger.</p>
             <a class="primary-button gathering-card__button" href="https://m.me/j/Reb1Q7OsA-RHz97I/?send_source=gc:copy_invite_link_c" target="_blank" rel="noopener noreferrer">Join Wednesday Prayer <span class="gathering-sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-        <a class="gathering-email-link" href="landing.html">Join the Community Email List →</a>
-      </div>
-      </div>
-    </section><section class="ministry-signup" id="stay-connected" aria-labelledby="stay-connected-heading">
-      <div class="ministry-signup__inner">
-        <p class="section-eyebrow section-eyebrow--centered"><span aria-hidden="true"></span>STAY CONNECTED<span aria-hidden="true"></span></p>
-        <h2 id="stay-connected-heading">Join the <em>Ministry Community</em></h2>
-        <p>Get new Bible study releases, free study resources, teaching updates, devotionals, and event announcements from Pieces Of A Woman Bible Studies.</p>
-        <div class="ministry-signup__perks">
-          <span>New study releases first</span><span>Free study resources</span><span>Teaching notes &amp; devotionals</span><span>Event announcements</span>
-        </div>
-        <a class="primary-button" href="landing.html">Join the Community <span aria-hidden="true">→</span></a>
-      </div>
-    </section><section class="community-detail"><h2>Grow with the Community</h2><p>Connect through Bible study, teaching notes, devotionals, and announcements.</p><a class="primary-button" href="landing.html">Join the Email List →</a><p>Questions? <a href="mailto:info@piecesofawoman.org">info@piecesofawoman.org</a></p></section></main><footer class="site-footer" id="footer">
+          </article></div>
+  </section>
+  <section class="editorial-section editorial-invitation" id="stay-connected" aria-labelledby="stay-connected-heading">
+    <div><p class="editorial-eyebrow">STAY CONNECTED</p><h2 id="stay-connected-heading">Join the <em>Ministry Community</em></h2><p>Get new Bible study releases, free study resources, teaching updates, devotionals, and event announcements from Pieces Of A Woman Bible Studies.</p></div>
+    <div class="editorial-invitation__action"><p>Connect through Bible study, teaching notes, devotionals, and announcements.</p><a class="editorial-button" href="landing.html">Join the Community Email List <span aria-hidden="true">→</span></a><p class="editorial-contact">Questions? <a href="mailto:info@piecesofawoman.org">info@piecesofawoman.org</a></p></div>
+  </section>
+</main><footer class="site-footer" id="footer">
 
     <div class="footer-overlay">
 
@@ -364,5 +349,6 @@
 
   <script src="js/navbar.js"></script>
 
+  <script src="js/page-layout.js"></script>
 </body>
 </html>
