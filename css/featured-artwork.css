@@ -1,0 +1,46 @@
+/* Approved artwork keeps its complete composition at every screen size. */
+body.poaw-satin .community-banner {
+  position: relative;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 0;
+}
+
+body.poaw-satin .community-banner picture,
+body.poaw-satin .community-banner img,
+body.poaw-satin .book-promo__link,
+body.poaw-satin .book-promo img {
+  display: block;
+  width: 100%;
+}
+
+body.poaw-satin .community-banner img,
+body.poaw-satin .book-promo img {
+  height: auto;
+}
+
+body.poaw-satin .book-promo {
+  padding: clamp(24px, 4vw, 56px) 16px;
+}
+
+body.poaw-satin .book-promo__link {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body.poaw-satin .book-promo__link:focus-visible {
+  outline: 3px solid var(--plum);
+  outline-offset: 5px;
+}
+
+body.poaw-satin .artwork-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
