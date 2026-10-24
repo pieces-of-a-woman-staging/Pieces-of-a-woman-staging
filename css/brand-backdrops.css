@@ -234,3 +234,78 @@ body.poaw-page-index .brand-backdrops .collections-nav {
   border-block: 1px solid #d3ac70;
 }
 body.poaw-page-index .brand-backdrops .collections-nav a { color: #511142; }
+
+/* User-supplied artwork, placed within existing sections without extending the copy. */
+body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner {
+  width: min(1200px, 100%);
+  display: grid;
+  grid-template-columns: minmax(180px, .65fr) minmax(0, 1.6fr);
+  column-gap: clamp(28px, 5vw, 72px);
+}
+body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner > :not(.home-testimonial-art) { grid-column: 2; }
+body.poaw-page-index .brand-backdrops #testimonials .home-testimonial-art {
+  display: block;
+  grid-column: 1;
+  grid-row: 1 / span 6;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e9c78e;
+  box-shadow: 12px 12px 0 #efa5cd2e, 0 20px 48px #19061f55;
+}
+body.poaw-page-index .brand-backdrops #community.home-community { grid-template-columns: minmax(0, 1fr); }
+body.poaw-page-index .brand-backdrops #community .home-community__visual {
+  background: #fff;
+  border-block: 1px solid #d8b57e;
+}
+body.poaw-page-index .brand-backdrops #community .home-community__visual img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+}
+body.poaw-page-index .brand-backdrops #community .home-community__copy {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr);
+  gap: 0 60px;
+  width: min(1348px, 100%);
+  margin: 0 auto;
+}
+body.poaw-page-index .brand-backdrops #community .home-community__copy > :not(.gathering-grid) { grid-column: 1; }
+body.poaw-page-index .brand-backdrops #community .gathering-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-self: center;
+  gap: 24px;
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+body.poaw-page-index .brand-backdrops #community .gathering-card { margin-top: 0; }
+body.poaw-page-index .brand-backdrops #stay-connected.home-signup {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 760px);
+  justify-content: center;
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+}
+body.poaw-page-index .brand-backdrops .home-signup-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #c69e61;
+  box-shadow: 10px 10px 0 #8f32642e, 0 18px 44px #5f1a4522;
+}
+body.poaw-page-index .brand-backdrops #stay-connected .ministry-signup__inner { width: 100%; min-width: 0; }
+@media (min-width: 701px) and (max-width: 1000px) {
+  body.poaw-page-index .brand-backdrops #community .home-community__copy { gap: 0 32px; }
+  body.poaw-page-index .brand-backdrops #community .gathering-grid { grid-template-columns: minmax(0, 1fr); }
+  body.poaw-page-index .brand-backdrops #stay-connected.home-signup { grid-template-columns: minmax(0, 230px) minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner { display: block; }
+  body.poaw-page-index .brand-backdrops #testimonials .home-testimonial-art { width: 180px; margin: 0 auto 34px; }
+  body.poaw-page-index .brand-backdrops #community .home-community__copy { display: block; }
+  body.poaw-page-index .brand-backdrops #community .gathering-grid { display: block; }
+  body.poaw-page-index .brand-backdrops #community .gathering-card { margin-top: 24px; }
+  body.poaw-page-index .brand-backdrops #stay-connected.home-signup { grid-template-columns: minmax(0, 1fr); }
+  body.poaw-page-index .brand-backdrops .home-signup-logo { width: min(240px, 100%); margin: 0 auto; }
+}
