@@ -243,6 +243,7 @@ body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner {
   column-gap: clamp(28px, 5vw, 72px);
 }
 body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner > :not(.home-testimonial-art) { grid-column: 2; }
+body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__card { background: #3b083bbb !important; }
 body.poaw-page-index .brand-backdrops #testimonials .home-testimonial-art {
   display: block;
   grid-column: 1;
