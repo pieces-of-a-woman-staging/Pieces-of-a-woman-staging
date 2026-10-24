@@ -1,4 +1,4 @@
-/* Logo-inspired artwork. All rules stop at main; Author and Legacy remain untouched. */
+/* Logo-inspired homepage artwork; the original content and layout are retained. */
 body.poaw-page-index .brand-backdrops {
   --puzzle-scene: url("../images/optimized/puzzle-enamel-backdrop-1536.webp");
   --cross-scene: url("../images/optimized/pink-cross-backdrop-1536.webp");
@@ -178,3 +178,59 @@ body.poaw-page-index .brand-motion-enabled .brand-scene-visible .brand-cross-art
   body.poaw-page-index .brand-puzzle-scene::before,
   body.poaw-page-index .brand-cross-art { animation: none !important; }
 }
+
+/* Continue the approved enamel artwork through the author and closing sections. */
+body.poaw-page-index.poaw-satin .brand-backdrops #about-author {
+  background: linear-gradient(110deg, #f4a4d1c9, #ffd8eceb 54%, #f5beddeb), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #about-author .poaw-author__story {
+  background: linear-gradient(135deg, #ffe7f2ed, #fbd3e8e8) !important;
+  box-shadow: 0 0 48px 24px #fbd3e861;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #about-author .poaw-author__photo-frame {
+  background: linear-gradient(135deg, #f9dcaa, #eaa6ce 30%, #fff0c5 60%, #b67a36) !important;
+  box-shadow: 0 20px 48px #5a12493d, 0 0 30px #f7bbdd66 !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #about-author .poaw-author__quote {
+  background: #ffd6ebc9 !important;
+  border-color: #ac7c3d !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #auntie-vonita {
+  color: #ffe7f4;
+  background: linear-gradient(110deg, #470b46a8, #3b083beb 53%, #3b083bf5), var(--puzzle-scene) left center / cover no-repeat;
+}
+body.poaw-page-index .brand-backdrops #auntie-vonita h2,
+body.poaw-page-index .brand-backdrops #auntie-vonita h3 { color: #fff0f7; }
+body.poaw-page-index .brand-backdrops #auntie-vonita h2 em { color: #ffb4db; }
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__eyebrow,
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__rule { color: #f0cd95; }
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__introduction,
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__artwork figcaption,
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__reflection-label,
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__reflection-attribution { color: #f5d4e8; }
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__artwork img {
+  border-color: #e5bf81;
+  box-shadow: 0 20px 54px #16071c88, 0 0 38px #eaa6ce44;
+}
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__teaching {
+  background: linear-gradient(120deg, #ffd5eb, #efa7cf);
+  border-color: #edc78a;
+}
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__reflection { border-color: #dfbd8977; }
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__reflection summary { color: #ffc4e4; }
+body.poaw-page-index .brand-backdrops #auntie-vonita .poaw-dedication__reflection summary:focus-visible { outline-color: #f0cd95; }
+body.poaw-page-index.poaw-satin .brand-backdrops #testimonials.home-testimonials {
+  background: linear-gradient(110deg, #4d0c49dd, #4d0c49c9), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #stay-connected.home-signup,
+body.poaw-page-index.poaw-satin .brand-backdrops #contact.home-contact {
+  background: linear-gradient(110deg, #f7b6d9d9, #ffd4e9e6), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index.poaw-satin .brand-backdrops #resources.home-resources {
+  background: linear-gradient(110deg, #ffd6ebdf, #f7bddfe8), var(--puzzle-scene) center / cover no-repeat !important;
+}
+body.poaw-page-index .brand-backdrops .collections-nav {
+  background: linear-gradient(100deg, #e998c6, #fcd1e6);
+  border-block: 1px solid #d3ac70;
+}
+body.poaw-page-index .brand-backdrops .collections-nav a { color: #511142; }
