@@ -244,6 +244,7 @@ body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner {
 }
 body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__inner > :not(.home-testimonial-art) { grid-column: 2; }
 body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__card { background: #3b083bbb !important; }
+body.poaw-page-index .brand-backdrops #testimonials .poaw-testimonials__score { color: #ffd4eb; border-color: #dfbf86; }
 body.poaw-page-index .brand-backdrops #testimonials .home-testimonial-art {
   display: block;
   grid-column: 1;
