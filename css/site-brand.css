@@ -1,0 +1,186 @@
+/* Shared visual direction: the approved pink/plum puzzle enamel and champagne gold. */
+body.poaw-brand-site {
+  --brand-art: url("../images/optimized/puzzle-enamel-backdrop-1536.webp");
+  --brand-cross: url("../images/optimized/pink-cross-backdrop-1536.webp");
+  --brand-ink: #4e1247;
+}
+body.poaw-brand-site .site-brand-mark {
+  display: block;
+  width: min(280px, 100%);
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 10px 24px #1c032a66);
+}
+/* Use the original alpha logo, with no white panel or rectangular frame. */
+body.poaw-brand-site.poaw-page-index .brand-backdrops .home-signup-logo {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 12px 18px #60144944);
+}
+body.poaw-brand-site .site-footer,
+body.poaw-brand-site .footer {
+  background: linear-gradient(110deg, #ffdaeee8, #f2afd5ed), var(--brand-art) center / cover no-repeat !important;
+}
+body.poaw-brand-site.poaw-satin :is(.site-header, .navbar, .navbar-container) { background: #ffe6f2 !important; }
+body.poaw-brand-site.poaw-satin .announcement-bar { background: #f3b2d5 !important; }
+body.poaw-brand-site:not(.poaw-page-index) main {
+  background: linear-gradient(110deg, #ffcfe8e8, #f6bddde8), var(--brand-art) center top / 100% auto repeat-y !important;
+}
+/* Titles become art-led introductions rather than isolated ivory headings. */
+body.poaw-brand-site.poaw-satin .site-brand-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, .8fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 90px);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 52px max(28px, calc((100vw - 1160px) / 2)) !important;
+  text-align: left !important;
+  background: linear-gradient(100deg, #3c093dbb, #3c093df5 64%), var(--brand-art) left center / cover no-repeat !important;
+  border: 0 !important;
+  border-bottom: 1px solid #dab67b !important;
+  box-shadow: none !important;
+}
+body.poaw-brand-site .site-brand-intro__copy { min-width: 0; }
+body.poaw-brand-site.poaw-satin .site-brand-intro :is(h1, .shop-heading) {
+  color: #fff0f7 !important;
+  font-size: clamp(42px, 5.6vw, 76px) !important;
+  line-height: 1.02 !important;
+  text-align: left !important;
+  margin: 16px 0 !important;
+}
+body.poaw-brand-site.poaw-satin .site-brand-intro p { color: #fce1f0 !important; margin-inline: 0 !important; text-align: left !important; }
+body.poaw-brand-site.poaw-satin .site-brand-intro .section-eyebrow { color: #eed09f !important; justify-content: flex-start; }
+body.poaw-brand-site.poaw-satin .site-brand-intro .gold-divider { margin-inline: 0 !important; }
+body.poaw-brand-site:not(.poaw-page-index) main .collections-nav {
+  margin: 0;
+  padding: 18px 22px;
+  background: linear-gradient(100deg, #e894c4, #fbd2e7);
+  border-block: 1px solid #d7b782;
+}
+body.poaw-brand-site:not(.poaw-page-index) main .collections-nav a { color: #501346; }
+body.poaw-brand-site.poaw-satin:not(.poaw-page-index) main :is(.shop-section, .study-section, .learn-details-section, .resources-section, .community-detail, .shop-discover) {
+  background: linear-gradient(110deg, #ffd8ede6, #f7bfdee9), var(--brand-art) center / cover no-repeat !important;
+}
+body.poaw-brand-site.poaw-satin:not(.poaw-page-index) main :is(.collections-feature, .collections-panel, .collections-gallery figure, .collections-artwork) {
+  background: linear-gradient(140deg, #ffeaf4ed, #f9cbe3eb);
+  border-color: #c99d62;
+  border-radius: 3px;
+  box-shadow: 0 15px 40px #65204419;
+}
+body.poaw-brand-site.poaw-satin:not(.poaw-page-index) main :is(.product-card, .product-card__content, .study-card, .learn-details-card, .shop-discover-card) {
+  background: linear-gradient(135deg, #ffeaf4f5, #f7cde4f5) !important;
+  border-color: #caa56c !important;
+  border-radius: 3px !important;
+  color: #503342;
+}
+body.poaw-brand-site.poaw-satin:not(.poaw-page-index) main .product-card__frame { background: transparent !important; }
+body.poaw-brand-site.poaw-satin:not(.poaw-page-index) main :is(.primary-button, .product-card__button, .editorial-button),
+body.poaw-brand-site.poaw-page-landing .cta {
+  color: #fff0f7 !important;
+  background: linear-gradient(115deg, #7e245e, #4f1247) !important;
+  border: 1px solid #d8b273 !important;
+  border-radius: 3px;
+  box-shadow: inset 0 1px #fff3, 0 8px 20px #57133e24;
+}
+body.poaw-brand-site:not(.poaw-page-index) main .product-badge { background: #6b1b56; color: #ffedf6; }
+/* The study pages get a large pink cross, keeping the page title beside it. */
+body.poaw-brand-site.poaw-satin:is(.poaw-page-what-youll-learn, .poaw-page-reading-tools) .site-brand-intro {
+  min-height: 450px;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
+  background: linear-gradient(90deg, transparent 20%, #33072ccc 52%, #33072cf5), var(--brand-cross) left center / cover no-repeat !important;
+}
+body.poaw-brand-site:is(.poaw-page-what-youll-learn, .poaw-page-reading-tools) .site-brand-intro__copy { grid-column: 2; }
+body.poaw-brand-site:is(.poaw-page-what-youll-learn, .poaw-page-reading-tools) .site-brand-intro .site-brand-mark { display: none; }
+/* Community and book pages retain their real artwork alongside a darker hero. */
+body.poaw-brand-site.poaw-layout-editorial.poaw-satin main > .editorial-hero {
+  background: linear-gradient(105deg, #390935ef 36%, #39093577), var(--brand-art) center / cover no-repeat !important;
+}
+body.poaw-brand-site .site-brand-mark--mini { width: 115px; margin: 0 0 20px; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-hero :is(h1, .editorial-lead) { color: #fff0f7; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-hero h1 em { color: #ffb6dc; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-hero :is(.editorial-description, .editorial-hero__note, .editorial-text-link) { color: #f9dbea; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-hero .editorial-eyebrow { color: #f0d1a3; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-hero__visual { border-color: #deb77d; box-shadow: 0 18px 50px #1c051f66; }
+body.poaw-brand-site.poaw-layout-editorial.poaw-satin main > .editorial-section {
+  background: linear-gradient(105deg, #ffd8eddf, #f6bbdfe8), var(--brand-art) center / cover no-repeat !important;
+}
+body.poaw-brand-site.poaw-layout-editorial.poaw-satin main > .editorial-gatherings {
+  background: linear-gradient(100deg, #3b093be8, #3b093be8), var(--brand-cross) left center / cover no-repeat !important;
+}
+body.poaw-brand-site.poaw-layout-editorial .editorial-gatherings .editorial-section__heading h2 { color: #fff0f7; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-gatherings .editorial-section__heading h2 em { color: #ffb6dc; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-gatherings .editorial-section__heading p { color: #f9dbea; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-gatherings .gathering-card {
+  background: #fbd1e8;
+  border-color: #dfbb81;
+  color: #503342;
+}
+body.poaw-brand-site.poaw-layout-editorial .editorial-gatherings .gathering-card :is(h3, p) { color: #503342; }
+body.poaw-brand-site.poaw-layout-editorial .editorial-gatherings .gathering-card .gathering-card__label { color: #82405f !important; }
+body.poaw-brand-site.poaw-layout-editorial.poaw-satin main > .book-details {
+  background: linear-gradient(100deg, #3b093bdb, #3b093bf2), var(--brand-cross) left center / cover no-repeat !important;
+}
+body.poaw-brand-site .book-details .editorial-section__heading :is(h2, p),
+body.poaw-brand-site .book-details .book-info-group > h3 { color: #fff0f7; }
+body.poaw-brand-site .book-details .editorial-section__heading h2 em { color: #ffb6dc; }
+body.poaw-brand-site .book-detail { background: #fbd6e9; border-color: #d2ac76; }
+/* A pink enamel surround for the founder and for practical contact information. */
+body.poaw-brand-site.poaw-page-about.poaw-satin .poaw-author {
+  background: linear-gradient(110deg, #f4a4d1c9, #ffd8eceb 54%, #f5beddeb), var(--brand-art) center / cover no-repeat !important;
+}
+body.poaw-brand-site.poaw-page-about.poaw-satin .poaw-author__story { background: #ffe1efdf !important; }
+body.poaw-brand-site.poaw-page-about.poaw-satin .poaw-author__photo-frame {
+  background: linear-gradient(135deg, #f9dcaa, #eaa6ce 30%, #fff0c5 60%, #b67a36) !important;
+  box-shadow: 0 20px 48px #5a12493d !important;
+}
+body.poaw-brand-site .support-content {
+  background: #ffe6f2ed;
+  border-inline: 1px solid #d6ae77;
+  padding-inline: clamp(20px, 4vw, 46px);
+}
+body.poaw-brand-site .support-contact-form { background: #fbcfe7; border-color: #bb9156; border-radius: 3px; }
+body.poaw-brand-site .support-contact-form :is(input, textarea) { background: #fff5fa; }
+/* The signup journey belongs to the same brand, including its existing external form link. */
+body.poaw-brand-site.poaw-page-landing :is(.header, .topbar) { background: #f8cae3; color: #511245; }
+body.poaw-brand-site.poaw-page-landing .hero {
+  background: linear-gradient(100deg, #3a073bdd, #3a073b99), var(--brand-art) center / cover no-repeat;
+}
+body.poaw-brand-site.poaw-page-landing .hero-inner { background: #360831df; border-color: #d7b37c; color: #fff0f7; }
+body.poaw-brand-site.poaw-page-landing .hero h1 em { color: #ffb6dc; }
+body.poaw-brand-site.poaw-page-landing .hero :is(.eyebrow, .fine) { color: #f3d5e7; }
+body.poaw-brand-site .site-brand-mark--invitation { width: 190px; margin: 0 auto 24px; }
+body.poaw-brand-site.poaw-page-landing :is(.benefits, .founder) {
+  background: linear-gradient(110deg, #ffd8ede6, #f6bbdfe8), var(--brand-art) center / cover no-repeat;
+}
+body.poaw-brand-site.poaw-page-landing .benefit { background: #ffeaf4e8; border-color: #c79d60; }
+body.poaw-brand-site.poaw-page-landing .last-call {
+  background: linear-gradient(100deg, #3b093bb8, #3b093be8), var(--brand-cross) left center / cover no-repeat;
+}
+body.poaw-brand-site.poaw-page-landing .last-call-inner { background: #ffdaeee8; }
+body.poaw-brand-site main :is(a, button, summary):focus-visible { outline: 3px solid #b8803e; outline-offset: 4px; }
+@media (max-width: 700px) {
+  body.poaw-brand-site {
+    --brand-art: url("../images/optimized/puzzle-enamel-backdrop-768.webp");
+    --brand-cross: url("../images/optimized/pink-cross-backdrop-768.webp");
+  }
+  body.poaw-brand-site.poaw-satin .site-brand-intro {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 36px 22px !important;
+    gap: 24px;
+  }
+  body.poaw-brand-site .site-brand-intro .site-brand-mark { width: 200px; grid-row: 1; }
+  body.poaw-brand-site .site-brand-intro__copy { grid-row: 2; }
+  body.poaw-brand-site.poaw-satin .site-brand-intro h1 { font-size: clamp(39px, 10vw, 60px) !important; }
+  body.poaw-brand-site.poaw-satin:is(.poaw-page-what-youll-learn, .poaw-page-reading-tools) .site-brand-intro {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    padding-top: 320px !important;
+    background: linear-gradient(180deg, transparent 150px, #33072cf5 340px), var(--brand-cross) 18% top / auto 390px no-repeat, #33072c !important;
+  }
+  body.poaw-brand-site:is(.poaw-page-what-youll-learn, .poaw-page-reading-tools) .site-brand-intro__copy { grid-column: 1; grid-row: 1; }
+  body.poaw-brand-site .site-brand-mark--mini { width: 100px; }
+  body.poaw-brand-site .support-content { width: calc(100% - 28px); }
+}
