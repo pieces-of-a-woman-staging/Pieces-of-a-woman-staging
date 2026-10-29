@@ -185,3 +185,25 @@ body.poaw-brand-site main :is(a, button, summary):focus-visible { outline: 3px s
   body.poaw-brand-site .site-brand-mark--mini { width: 100px; }
   body.poaw-brand-site .support-content { width: calc(100% - 28px); }
 }
+
+/* Pink puzzle-piece cursor for visitors using a mouse or trackpad. */
+@media (hover: hover) and (pointer: fine) {
+  body.poaw-brand-site {
+    cursor: url("../images/cursors/pink-puzzle.svg") 5 5, auto;
+  }
+  body.poaw-brand-site :is(a, button, summary, select, [role="button"], label[for],
+    input[type="button"], input[type="submit"], input[type="reset"],
+    input[type="checkbox"], input[type="radio"]) {
+    cursor: url("../images/cursors/pink-puzzle-link.svg") 5 5, pointer !important;
+  }
+  body.poaw-brand-site :is(textarea, input:not([type]),
+    input[type="text"], input[type="email"], input[type="search"],
+    input[type="password"], input[type="tel"], input[type="url"],
+    input[type="number"], [contenteditable]:not([contenteditable="false"])) {
+    cursor: text !important;
+  }
+  body.poaw-brand-site :is(button:disabled, input:disabled, select:disabled,
+    textarea:disabled, [aria-disabled="true"]) {
+    cursor: not-allowed !important;
+  }
+}
