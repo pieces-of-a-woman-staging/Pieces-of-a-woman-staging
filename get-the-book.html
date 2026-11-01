@@ -35,14 +35,15 @@
   <link rel="stylesheet" href="css/page-layout.css?v=20261023-1">
   <link rel="stylesheet" href="css/site-brand.css?v=20261029-puzzle-cursor">
   <style id="book-mobile-contrast">
-    /* Keep mobile hero text above the decorative edges and readable over the artwork. */
+    /* Pink cross artwork stays above the fold; the lower gradient protects the copy. */
     @media (max-width: 700px) {
       body.poaw-brand-site.poaw-page-get-the-book.poaw-layout-editorial.poaw-satin main > .book-page-hero {
-        background-image: linear-gradient(105deg, #390935ef 36%, #390935cc), var(--brand-art) !important;
+        background: linear-gradient(90deg, #390935 calc(100% - 280px), #39093500 calc(100% - 200px)), linear-gradient(180deg, #39093520, #390935b8 210px, #390935 360px), var(--brand-cross) calc(100% + 200px) top / auto 320px no-repeat, #390935 !important;
       }
       body.poaw-page-get-the-book main > .book-page-hero::before,
       body.poaw-page-get-the-book main > .book-page-hero::after {
-        background-image: linear-gradient(#390935cc, #390935cc), var(--brand-art) !important;
+        content: none !important;
+        display: none !important;
       }
       body.poaw-page-get-the-book .book-page-hero > :is(.editorial-hero__copy, .editorial-hero__visual) {
         position: relative;
